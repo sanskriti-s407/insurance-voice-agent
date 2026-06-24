@@ -13,4 +13,4 @@
 - Track my claim.
 - I want to file a claim.
 - Renew my policy.
-- Talk to an agent.
+- Talk to a human agent
