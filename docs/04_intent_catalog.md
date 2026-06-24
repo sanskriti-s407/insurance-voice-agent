@@ -19,7 +19,6 @@
 - verifyVehicle(vehicle_number, chassis_number)
 - createPolicy(product_type, customer_details, vehicle_details)
 
----
 
 ## 2. Policy Inquiry Intent
 **Intent Name:** `policy_inquiry`
@@ -35,7 +34,6 @@
 
 **API Used:** getPolicyDetails(policy_id)
 
----
 
 ## 3. Benefits Information Intent
 **Intent Name:** `benefits_information`
@@ -51,7 +49,6 @@
 
 **API Used:** getBenefitsInfo(policy_id)
 
----
 
 ## 4. Claim Status Intent
 **Intent Name:** `claim_status`
@@ -67,7 +64,6 @@
 
 **API Used:** getClaimsStatus(claim_id)
 
----
 
 ## 5. New Claim Initiation Intent
 **Intent Name:** `initiate_claim`
@@ -83,7 +79,6 @@
 
 **API Used:** initiateClaim(policy_id)
 
----
 
 ## 6. Policy Renewal Intent
 **Intent Name:** `policy_renewal`
@@ -99,7 +94,6 @@
 
 **API Used:** renewPolicy(policy_id)
 
----
 
 ## 7. Agent Escalation Intent
 **Intent Name:** `agent_escalation`
