@@ -1,6 +1,6 @@
 # Conversation Flows
 
-## - New User Onboarding Flow
+- **New User Onboarding Flow**
 
 1. Customer requests a new insurance policy.
 2. Bot retrieves available insurance products.
