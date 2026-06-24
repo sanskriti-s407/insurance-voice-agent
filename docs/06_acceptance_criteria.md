@@ -3,6 +3,7 @@
 ### 1. New User Onboarding
 
 -  AC-NEW-001
+-  
 Given a new customer requests to buy a policy  
 When the customer selects a product type  
 Then the system shall retrieve and present the relevant product coverage details.
