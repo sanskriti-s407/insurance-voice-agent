@@ -41,7 +41,6 @@ This project proposes an AI-powered Insurance Conversational Voice Agent built u
 
 
 ### Folder Description
-
 * **docs/** → Business requirements, user stories, acceptance criteria, authentication design, conversation flows, and guardrails.
 * **cx-agent-studio-design/** → Dialogflow CX implementation design including flows, pages, intents, entities, route groups, session parameters, and webhooks.
 * **apis/** → API contracts and sample/mock API responses.
@@ -49,12 +48,7 @@ This project proposes an AI-powered Insurance Conversational Voice Agent built u
 * **testing/** → Test strategy, happy path scenarios, authentication tests, routing tests, and regression coverage.
 * **architecture/** → Solution architecture, authentication workflow, intent routing, and end-to-end process diagrams.
 * **demo/** → Demo script, test utterances, screenshots, and demo artifacts.
-* **presentation/** → Speaker notes, mentor Q&A preparation, and presentation materials.
-* **references/** → Requirement documents, project documentation, and supporting resources.
 
-```
-```
-
-
+`
 ## Week 1 Demo Scope
 For Week 1, the demo focuses on authentication, intent routing, happy path flows, and mock API-driven responses for primary insurance services.
