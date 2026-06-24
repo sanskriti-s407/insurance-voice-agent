@@ -16,13 +16,10 @@ Build an AI-powered conversational voice agent on Google Cloud using CX Agent St
 - Reduce dependency on live agents for routine requests.
 - Enable scalable API-based backend integration.
 
-## Key Stakeholders
-- Business Stakeholders
-- Product Owner
-- Conversational AI Development Team
-- QA Team
-- Customer Support Team
-- Mentor / Review Panel
+## Roles
+- Business Analyst - Sanskriti Shrey & Harshita Kaur
+- Developer - Venkata Sujay & Riya Kungotra
+- Quality Analyst - Sanskriti Shrey & Harshita Kaur
 
 ## In Scope
 - Authentication Layer
