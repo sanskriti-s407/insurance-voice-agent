@@ -15,13 +15,13 @@ Authenticate customer using phone, DOB, and verification answers.
 ```
 
 ### Response
-``json
+```json
 {
   "authenticated": true,
   "customerId": "C001",
   "customerName": "Amit Verma"
 }
-``
+```
 
 ## getPolicyDetails(policy_id)
 
