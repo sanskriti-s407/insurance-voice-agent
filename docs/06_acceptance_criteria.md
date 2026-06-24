@@ -1,6 +1,6 @@
 # Acceptance Criteria
 
-1. New User Onboarding
+### 1. New User Onboarding
 
 ### AC-NEW-001
 Given a new customer requests to buy a policy  
@@ -27,7 +27,7 @@ Given identity, profile, and vehicle verification are successful
 When createPolicy() is called  
 Then the system shall generate and provide a new Policy ID and expiry date.
 
-2. Policy Inquiry
+### 2. Policy Inquiry
 
 ### AC-POL-001
 Given the customer is authenticated  
@@ -39,7 +39,7 @@ Given policy details are available
 When getPolicyDetails(policy_id) returns a response  
 Then the system shall provide policy type, status, coverage details, and expiry date.
 
-3. Benefits Information
+### 3. Benefits Information
 
 ### AC-BEN-001
 Given the customer is authenticated  
@@ -51,7 +51,7 @@ Given benefits information is available
 When getBenefitsInfo(policy_id) returns a response  
 Then the system shall provide benefit details, coverage information, and included services.
 
-4. Claim Status
+### 4. Claim Status
 
 ### AC-CLS-001
 Given the customer is authenticated  
@@ -63,7 +63,7 @@ Given claim status information is available
 When getClaimsStatus(claim_id) returns a response  
 Then the system shall provide claim status, claim amount, and latest update.
 
-5. New Claim Initiation
+### 5. New Claim Initiation
 
 ### AC-CLM-001
 Given the customer is authenticated  
@@ -75,7 +75,7 @@ Given claim creation is successful
 When initiateClaim(policy_id) returns a response  
 Then the system shall generate and provide a Claim ID.
 
-6. Policy Renewal
+### 6. Policy Renewal
 
 ### AC-REN-001
 Given the customer is authenticated  
@@ -87,7 +87,7 @@ Given policy renewal is successful
 When renewPolicy(policy_id) returns a response  
 Then the system shall provide renewal confirmation and the new validity date.
 
-7. Agent Escalation
+### 7. Agent Escalation
 
 ### AC-ESC-001
 Given the customer requests human assistance  
