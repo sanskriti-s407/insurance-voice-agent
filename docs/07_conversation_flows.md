@@ -1,34 +1,5 @@
 # Conversation Flows
 
-## Authentication Flow
-Customer starts call  
-↓  
-Voice agent welcomes customer  
-↓  
-Bot collects registered mobile number  
-↓  
-System validates mobile number  
-↓  
-Bot collects date of birth  
-↓  
-System validates DOB  
-↓  
-Bot asks verification question 1  
-↓  
-Customer answers question 1  
-↓  
-Bot asks verification question 2  
-↓  
-Customer answers question 2  
-↓  
-System calls validateUser()  
-↓  
-Authentication successful  
-↓  
-System retrieves customer profile and policies  
-↓  
-Customer proceeds to intent routing  
-
 ## New User Onboarding Flow
 Customer requests a new insurance policy  
 ↓  
