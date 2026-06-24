@@ -6,13 +6,11 @@
 Authenticate customer using phone, DOB, and verification answers.
 
 ### Request
-```json
 {
   "phone": "9876543210",
   "dob": "1990-05-15",
   "verificationAnswers": ["Greenfield School", "Sharma"]
 }
-```
 
 ### Response
 ```json
