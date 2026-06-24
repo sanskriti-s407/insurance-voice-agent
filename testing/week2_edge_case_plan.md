@@ -1,4 +1,4 @@
-# Week 2 Edge Case Plan
+# Week 2 Edge Case
 
 ## Authentication Edge Cases
 - Invalid phone number
