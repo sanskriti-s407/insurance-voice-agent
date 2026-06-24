@@ -1,0 +1,23 @@
+[
+  {
+    "claimId": "CLM12345",
+    "policyId": "P101",
+    "status": "In Progress",
+    "amount": 25000,
+    "lastUpdate": "2025-05-10"
+  },
+  {
+    "claimId": "CLM67890",
+    "policyId": "P102",
+    "status": "Closed",
+    "amount": 50000,
+    "lastUpdate": "2025-04-01"
+  },
+  {
+    "claimId": "CLM24680",
+    "policyId": "P104",
+    "status": "Pending",
+    "amount": 100000,
+    "lastUpdate": "2025-05-22"
+  }
+]
