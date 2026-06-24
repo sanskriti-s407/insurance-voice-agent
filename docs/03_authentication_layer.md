@@ -31,14 +31,12 @@ Authentication is not treated as a separate customer intent. It is handled as a 
 The system retrieves all policies associated with the authenticated customer and displays them. The customer can then select a policy or ask questions related to a displayed policy without manually entering the policy ID.
 
 ## Example Response
-```text
 Authentication successful. Welcome, Amit Verma.
 
 Your Policies:
 P101 – Vehicle Insurance (Active)
 
 How can I help you today?
-```
 
 ## Authentication Workflow
 ```text
