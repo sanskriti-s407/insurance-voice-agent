@@ -2,25 +2,25 @@
 
 ## New User Onboarding Flow
 Customer requests a new insurance policy  
-↓  
+             ↓  
 Bot retrieves available insurance products  
-↓  
+             ↓  
 Bot presents product options  
-↓  
+             ↓  
 Customer selects product  
-↓  
+             ↓  
 Bot collects mobile number and sends OTP  
-↓  
+             ↓  
 Customer verifies OTP  
-↓  
+             ↓  
 Bot collects DOB and security question answers  
-↓  
+             ↓  
 For motor insurance, bot collects vehicle and chassis number  
-↓  
+             ↓  
 System validates vehicle details  
-↓  
+             ↓  
 System creates policy  
-↓  
+             ↓  
 Bot shares new Policy ID and expiry date  
 
 ## Policy Inquiry Flow
