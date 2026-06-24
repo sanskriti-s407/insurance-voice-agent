@@ -40,7 +40,7 @@ This project proposes an AI-powered Insurance Conversational Voice Agent built u
 - Week 3: Integration + Testing + Final Demo
 
 ## Repository Structure
-```text
+
 docs/                    Business and functional documentation
 cx-agent-studio-design/  Dialogflow CX implementation design
 apis/                    API contracts and mock API responses
@@ -48,9 +48,7 @@ mock-data/               Sample customer, policy, and claim data
 testing/                 QA strategy and test cases
 architecture/            Architecture and workflow diagrams
 demo/                    Demo scripts and test utterances
-presentation/            Speaker notes and mentor Q&A
-references/              Original project documents
-```
+
 
 ## Week 1 Demo Scope
 For Week 1, the demo focuses on authentication, intent routing, happy path flows, and mock API-driven responses for primary insurance services.
