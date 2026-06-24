@@ -1,130 +1,98 @@
 # Conversation Flows
 
-## New User Onboarding Flow
-Customer requests a new insurance policy  
-             ↓  
-Bot retrieves available insurance products  
-             ↓  
-Bot presents product options  
-             ↓  
-Customer selects product  
-             ↓  
-Bot collects mobile number and sends OTP  
-             ↓  
-Customer verifies OTP  
-             ↓  
-Bot collects DOB and security question answers  
-             ↓  
-For motor insurance, bot collects vehicle and chassis number  
-             ↓  
-System validates vehicle details  
-             ↓  
-System creates policy  
-             ↓  
-Bot shares new Policy ID and expiry date  
+## - New User Onboarding Flow
 
-## Policy Inquiry Flow
-Customer requests policy details  
-↓  
-System verifies customer is authenticated  
-↓  
-System retrieves policies linked to customer  
-↓  
-Bot displays available policies  
-↓  
-Customer selects policy  
-↓  
-System calls getPolicyDetails(policy_id)  
-↓  
-Bot provides policy details  
-↓  
-End conversation or ask if further help is needed  
+1. Customer requests a new insurance policy.
+2. Bot retrieves available insurance products.
+3. Bot presents product options.
+4. Customer selects a product.
+5. Bot collects the customer's mobile number and sends an OTP.
+6. Customer verifies the OTP.
+7. Bot collects the customer's date of birth and security question answers.
+8. For Motor Insurance, the bot collects the vehicle number and chassis number.
+9. System validates the vehicle details.
+10. System creates the insurance policy.
+11. Bot shares the newly generated Policy ID and policy expiry date.
 
-## Benefits Information Flow
-Customer asks for policy benefits  
-↓  
-System verifies customer is authenticated  
-↓  
-System retrieves customer policies  
-↓  
-Customer selects policy  
-↓  
-System calls getBenefitsInfo(policy_id)  
-↓  
-Bot provides benefit details, coverage information, and included services  
-↓  
-End conversation or ask if further help is needed  
+---
+
+## - Policy Inquiry Flow
+
+1. Customer requests policy details.
+2. System verifies that the customer is authenticated.
+3. System retrieves policies associated with the customer.
+4. Bot displays the available policies.
+5. Customer selects a policy.
+6. System calls getPolicyDetails(policy_id).
+7. Bot provides policy information including status, coverage, and expiry details.
+8. Bot asks whether additional assistance is required.
+
+---
+
+## - Benefits Information Flow
+
+1. Customer requests policy benefits.
+2. System verifies that the customer is authenticated.
+3. System retrieves customer policies.
+4. Customer selects a policy.
+5. System calls getBenefitsInfo(policy_id).
+6. Bot provides benefits, coverage details, and included services.
+7. Bot asks whether additional assistance is required.
+
+---
 
 ## Claim Status Flow
-Customer asks for claim status  
-↓  
-System verifies customer is authenticated  
-↓  
-System retrieves policies  
-↓  
-Customer selects policy  
-↓  
-System retrieves claims under selected policy  
-↓  
-Customer selects claim  
-↓  
-System calls getClaimsStatus(claim_id)  
-↓  
-Bot provides claim status, amount, and latest update  
-↓  
-End conversation or ask if further help is needed  
+
+1. Customer requests claim status information.
+2. System verifies that the customer is authenticated.
+3. System retrieves customer policies.
+4. Customer selects a policy.
+5. System retrieves claims associated with the selected policy.
+6. Customer selects a claim.
+7. System calls getClaimsStatus(claim_id).
+8. Bot provides claim status, claim amount, and latest update.
+9. Bot asks whether additional assistance is required.
+
+---
 
 ## New Claim Initiation Flow
-Customer requests to file a claim  
-↓  
-System verifies customer is authenticated  
-↓  
-System retrieves customer policies  
-↓  
-Customer selects policy  
-↓  
-System calls initiateClaim(policy_id)  
-↓  
-Claim is created successfully  
-↓  
-System generates Claim ID  
-↓  
-Bot shares Claim ID with customer  
+
+1. Customer requests to register a new claim.
+2. System verifies that the customer is authenticated.
+3. System retrieves customer policies.
+4. Customer selects a policy.
+5. System calls initiateClaim(policy_id).
+6. Claim request is created successfully.
+7. System generates a Claim ID.
+8. Bot shares the generated Claim ID with the customer.
+9. Bot asks whether additional assistance is required.
+
+---
 
 ## Policy Renewal Flow
-Customer requests policy renewal  
-↓  
-System verifies customer is authenticated  
-↓  
-System retrieves customer policies  
-↓  
-Bot displays policies available for renewal  
-↓  
-Customer selects policy  
-↓  
-System calls renewPolicy(policy_id)  
-↓  
-Policy renewal is processed successfully  
-↓  
-System returns renewal status and new validity date  
-↓  
-Bot confirms renewal  
+
+1. Customer requests policy renewal.
+2. System verifies that the customer is authenticated.
+3. System retrieves customer policies.
+4. Bot displays policies available for renewal.
+5. Customer selects a policy.
+6. System calls renewPolicy(policy_id).
+7. Policy renewal is processed successfully.
+8. System returns renewal status and updated validity date.
+9. Bot confirms successful renewal and shares the new validity date.
+10. Bot asks whether additional assistance is required.
+
+---
 
 ## Agent Escalation Flow
-Customer requests human assistance  
-↓  
-System verifies customer is authenticated  
-↓  
-Bot asks for escalation reason  
-↓  
-Customer provides reason  
-↓  
-System calls createCase()  
-↓  
-System generates ticket number  
-↓  
-System transfers conversation context  
-↓  
-System calls escalateToAgent()  
-↓  
-Customer is connected to live support agent
+
+1. Customer requests human assistance.
+2. System verifies that the customer is authenticated.
+3. Bot asks for the reason for escalation.
+4. Customer provides the escalation reason.
+5. System calls createCase().
+6. System generates a support ticket number.
+7. System transfers conversation context and customer information.
+8. System calls escalateToAgent().
+9. Customer is connected to a live support agent.
+10. Bot provides the generated ticket number for reference.
