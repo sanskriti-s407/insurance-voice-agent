@@ -1,6 +1,5 @@
 # Architecture Assets
 
-Upload diagrams here:
 - end_to_end_flow.png
 
 
@@ -14,5 +13,4 @@ Upload diagrams here:
 -  intent_routing_diagram.png
   <img width="1179" height="787" alt="Screenshot (18)" src="https://github.com/user-attachments/assets/9a81c284-e255-445e-a4e3-394c258bc75e" />
 
-- solution_architecture.png
 
