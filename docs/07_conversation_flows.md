@@ -1,6 +1,6 @@
 # Conversation Flows
 
-- **New User Onboarding Flow**
+## New User Onboarding Flow
 
 1. Customer requests a new insurance policy.
 2. Bot retrieves available insurance products.
@@ -16,7 +16,7 @@
 
 ---
 
-## - Policy Inquiry Flow
+## Policy Inquiry Flow
 
 1. Customer requests policy details.
 2. System verifies that the customer is authenticated.
@@ -29,7 +29,7 @@
 
 ---
 
-## - Benefits Information Flow
+##  Benefits Information Flow
 
 1. Customer requests policy benefits.
 2. System verifies that the customer is authenticated.
