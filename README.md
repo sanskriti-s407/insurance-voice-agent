@@ -39,7 +39,7 @@ This project proposes an AI-powered Insurance Conversational Voice Agent built u
 - Week 2: Edge Cases + Fallbacks + Evaluation
 - Week 3: Integration + Testing + Final Demo
 
-## Repository Structure
+## Repository Structure   
 
 docs/                    Business and functional documentation
 cx-agent-studio-design/  Dialogflow CX implementation design
