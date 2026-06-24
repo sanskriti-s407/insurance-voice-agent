@@ -39,48 +39,4 @@ P101 – Vehicle Insurance (Active)
 How can I help you today?
 
 ## Authentication Workflow
-```text
-Customer Starts Call
-↓
-Voice Agent Welcomes Customer
-↓
-Bot Collects Registered Mobile Number
-↓
-System Validates Mobile Number
-↓
-Bot Collects Date of Birth
-↓
-System Validates DOB
-↓
-Bot Asks Verification Question 1
-↓
-Customer Answers Question 1
-↓
-Bot Asks Verification Question 2
-↓
-Customer Answers Question 2
-↓
-System Calls validateUser(phone, dob, verification_answers)
-↓
-Is Authentication Successful?
-
-YES:
-Fetch Customer Profile
-↓
-Store Authentication Status
-↓
-Proceed to Intent Routing
-↓
-Customer Request Routed to Correct Flow
-
-NO:
-Show Authentication Failed Message
-↓
-Increase Retry Count
-↓
-Retry Count Less Than 3?
-YES → Ask Details Again
-NO → Create Escalation Case
-↓
-Transfer to Live Agent With Context
-```
+<img width="640" height="803" alt="image" src="https://github.com/user-attachments/assets/572b5d09-54b8-419b-b785-49510c441109" />
