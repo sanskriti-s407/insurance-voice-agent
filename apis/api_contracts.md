@@ -6,20 +6,22 @@
 Authenticate customer using phone, DOB, and verification answers.
 
 ### Request
+```json
 {
   "phone": "9876543210",
   "dob": "1990-05-15",
   "verificationAnswers": ["Greenfield School", "Sharma"]
 }
+```
 
 ### Response
-```json
+``json
 {
   "authenticated": true,
   "customerId": "C001",
   "customerName": "Amit Verma"
 }
-```
+``
 
 ## getPolicyDetails(policy_id)
 
