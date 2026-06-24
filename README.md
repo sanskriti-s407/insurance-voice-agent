@@ -39,15 +39,89 @@ This project proposes an AI-powered Insurance Conversational Voice Agent built u
 - Week 2: Edge Cases + Fallbacks + Evaluation
 - Week 3: Integration + Testing + Final Demo
 
-## Repository Structure   
+## Repository Structure
 
-docs/                    Business and functional documentation
-cx-agent-studio-design/  Dialogflow CX implementation design
-apis/                    API contracts and mock API responses
-mock-data/               Sample customer, policy, and claim data
-testing/                 QA strategy and test cases
-architecture/            Architecture and workflow diagrams
-demo/                    Demo scripts and test utterances
+```text
+insurance-voice-agent-cx
+│
+├── README.md
+├── PROJECT_CHARTER.md
+├── WEEKLY_PLAN.md
+│
+├── docs
+│   ├── 01_business_problem.md
+│   ├── 02_requirements.md
+│   ├── 03_authentication_layer.md
+│   ├── 04_intent_catalog.md
+│   ├── 05_user_stories.md
+│   ├── 06_acceptance_criteria.md
+│   ├── 07_conversation_flows.md
+│   ├── 08_intent_routing_logic.md
+│   └── 09_security_guardrails.md
+│
+├── cx-agent-studio-design
+│   ├── flows.md
+│   ├── pages.md
+│   ├── intents.md
+│   ├── entities.md
+│   ├── session_parameters.md
+│   ├── route_groups.md
+│   ├── event_handlers.md
+│   ├── webhooks.md
+│   └── implementation_steps.md
+│
+├── apis
+│   ├── api_contracts.md
+│   └── mock_api_responses.md
+│
+├── mock-data
+│   ├── customers.json
+│   ├── policies.json
+│   └── claims.json
+│
+├── testing
+│   ├── test_strategy.md
+│   ├── happy_path_test_cases.md
+│   ├── authentication_test_cases.md
+│   ├── intent_routing_test_cases.md
+│   └── regression_test_cases.md
+│
+├── architecture
+│   ├── solution_architecture.md
+│   ├── authentication_workflow.png
+│   ├── intent_routing_diagram.png
+│   └── end_to_end_process_flow.png
+│
+├── demo
+│   ├── week1_demo_script.md
+│   ├── demo_test_utterances.md
+│   └── screenshots
+│
+├── presentation
+│   ├── speaker_notes.md
+│   ├── mentor_questions_answers.md
+│   └── final_presentation.pptx
+│
+└── references
+    ├── insurance_vehicle_claims_requirement.pdf
+    ├── week1_documentation.pdf
+    └── supporting_resources
+```
+
+### Folder Description
+
+* **docs/** → Business requirements, user stories, acceptance criteria, authentication design, conversation flows, and guardrails.
+* **cx-agent-studio-design/** → Dialogflow CX implementation design including flows, pages, intents, entities, route groups, session parameters, and webhooks.
+* **apis/** → API contracts and sample/mock API responses.
+* **mock-data/** → Sample customer, policy, and claim datasets used for testing and development.
+* **testing/** → Test strategy, happy path scenarios, authentication tests, routing tests, and regression coverage.
+* **architecture/** → Solution architecture, authentication workflow, intent routing, and end-to-end process diagrams.
+* **demo/** → Demo script, test utterances, screenshots, and demo artifacts.
+* **presentation/** → Speaker notes, mentor Q&A preparation, and presentation materials.
+* **references/** → Requirement documents, project documentation, and supporting resources.
+
+```
+```
 
 
 ## Week 1 Demo Scope
