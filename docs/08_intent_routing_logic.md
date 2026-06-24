@@ -26,9 +26,9 @@
   - Report an accident
 
  - **Policy Renewal**
-  - Renew Policy
-  - Extend insurance
-  - Policy renewal
+   - Renew Policy
+   - Extend insurance
+   - Policy renewal
    
 - **Agent Escalation**    
    - Talk to agent 
