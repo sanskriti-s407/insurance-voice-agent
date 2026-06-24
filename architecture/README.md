@@ -2,7 +2,8 @@
 
 Upload diagrams here:
 - end_to_end_flow.png
-  ![Uploading Screenshot (17).png…]()
+  <img width="1052" height="813" alt="Screenshot (17)" src="https://github.com/user-attachments/assets/d1e903da-7234-4b83-8294-5f680a1ddf3a" />
+
 
 - authentication_workflow.png
 <img width="640" height="803" alt="image" src="https://github.com/user-attachments/assets/572b5d09-54b8-419b-b785-49510c441109" />
