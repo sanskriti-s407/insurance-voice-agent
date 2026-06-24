@@ -1,15 +1,12 @@
 # Event Handlers
 
 ## No-Match Default
-Prompt:
-text
-Sorry, I could not understand that. Could you please repeat your request?
+Prompt:   
+- Sorry, I could not understand that. Could you please repeat your request?
 
+After repeated no-match:   
+- I am unable to understand your request clearly. I will connect you to a support agent for better assistance.
 
-After repeated no-match:
-```text
-I am unable to understand your request clearly. I will connect you to a support agent for better assistance.
-```
 
 ## No-Input Default
 Prompt:
