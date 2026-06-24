@@ -7,4 +7,3 @@ Upload diagrams here:
 - intent_routing_diagram.png
 - solution_architecture.png
 
-These images should be referenced from the documentation files.
