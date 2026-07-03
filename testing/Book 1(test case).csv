@@ -1,61 +1,27 @@
-Test ID,Module,Test Scenario,Execution Date,Result,Remarks,,,,,
-TC-AUTH-001,Authentication,Valid login,01/07/2026,Pass,User authenticated successfully.,,,,,
-TC-AUTH-002,Authentication,Invalid phone number,01/07/2026,Pass,Appropriate error message displayed.,,,,,
-TC-AUTH-003,Authentication,Invalid date of birth,01/07/2026,Pass,Authentication denied for incorrect DOB.,,,,,
-TC-AUTH-004,Authentication,Incorrect security answer,01/07/2026,Pass,Verification failed as expected.,,,,,
-TC-AUTH-005,Authentication,Authentication failure after 3 attempts,01/07/2026,Pass,Access blocked after maximum retry limit.,,,,,
-TC-AUTH-006,Authentication,Session maintained after successful login,01/07/2026,Pass,User session maintained successfully.,,,,,
-TC-ONB-001,New User Onboarding,New user onboarding,01/07/2026,pass,Onboarding completed successfully.,,,,,
-TC-ONB-002,New User Onboarding,Motor policy creation,01/07/2026,Pass,Motor policy created successfully.,,,,,
-TC-ONB-003,New User Onboarding,Health policy creation,01/07/2026,pass,Health policy created successfully.,,,,,
-TC-ONB-004,New User Onboarding,Life policy creation,01/07/2026,pass,Life policy created successfully.,,,,,
-TC-POL-001,Policy Inquiry,Retrieve policy details,01/07/2026,Pass,Policy details retrieved successfully.,,,,,
-TC-BEN-001,Benefits Information,Retrieve policy benefits,01/07/2026,Pass,Benefits information displayed correctly.,,,,,
-TC-CLM-001,Claim Status,Retrieve claim status,01/07/2026,Pass,Claim status retrieved successfully.,,,,,
-TC-NEW-001,New Claim Initiation,Register new claim,01/07/2026,Pass,New claim registered successfully.,,,,,
-TC-REN-001,Policy Renewal,Renew policy,01/07/2026,Pass,Policy renewed successfully.,,,,,
-TC-ESC-001,Agent Escalation,Transfer to live agent,01/07/2026,Pass,Live agent escalation completed successfully.,,,,,
-TC-IR-001,Intent Routing,Route to New User Onboarding,01/07/2026,Pass,Correct intent identified and routed successfully.,,,,,
-TC-IR-002,Intent Routing,Route to Policy Inquiry,01/07/2026,Pass,Correct intent identified and routed successfully.,,,,,
-TC-IR-003,Intent Routing,Route to Benefits Information,01/07/2026,Pass,Correct intent identified and routed successfully.,,,,,
-TC-IR-004,Intent Routing,Route to Claim Status,01/07/2026,Pass,Correct intent identified and routed successfully.,,,,,
-TC-IR-005,Intent Routing,Route to New Claim Initiation,01/07/2026,Pass,Correct intent identified and routed successfully.,,,,,
-TC-IR-006,Intent Routing,Route to Policy Renewal,01/07/2026,Pass,Correct intent identified and routed successfully.,,,,,
-TC-IR-007,Intent Routing,Route to Agent Escalation,01/07/2026,Pass,Correct intent identified and routed successfully.,,,,,
-TC-EC-001,Authentication Edge Case,Invalid phone number,01/07/2026,Pass,Invalid input handled correctly.,,,,,
-TC-EC-002,Authentication Edge Case,Invalid date of birth,01/07/2026,Pass,Invalid DOB handled correctly.,,,,,
-TC-EC-003,Authentication Edge Case,Incorrect verification answer,01/07/2026,Pass,Incorrect verification response handled correctly.,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
+Test ID,Module,Test Scenario,Execution Date,Result,Remarks
+TC-AUTH-001,Authentication,Valid login,01/07/2026,Pass,User authenticated successfully.
+TC-AUTH-002,Authentication,Invalid phone number,01/07/2026,Pass,Appropriate error message displayed.
+TC-AUTH-003,Authentication,Invalid date of birth,01/07/2026,Pass,Authentication denied for incorrect DOB.
+TC-AUTH-004,Authentication,Incorrect security answer,01/07/2026,Pass,Verification failed as expected.
+TC-AUTH-005,Authentication,Authentication failure after 3 attempts,01/07/2026,Pass,Access blocked after maximum retry limit.
+TC-AUTH-006,Authentication,Session maintained after successful login,01/07/2026,Pass,User session maintained successfully.
+TC-ONB-001,New User Onboarding,New user onboarding,01/07/2026,Pass,Onboarding completed successfully.
+TC-ONB-002,New User Onboarding,Motor policy creation,01/07/2026,Pass,Motor policy created successfully.
+TC-ONB-003,New User Onboarding,Health policy creation,01/07/2026,Pass,Health policy created successfully.
+TC-ONB-004,New User Onboarding,Life policy creation,01/07/2026,Pass,Life policy created successfully.
+TC-POL-001,Policy Inquiry,Retrieve policy details,01/07/2026,Pass,Policy details retrieved successfully.
+TC-BEN-001,Benefits Information,Retrieve policy benefits,01/07/2026,Pass,Benefits information displayed correctly.
+TC-CLM-001,Claim Status,Retrieve claim status,01/07/2026,Pass,Claim status retrieved successfully.
+TC-NEW-001,New Claim Initiation,Register new claim,01/07/2026,Pass,New claim registered successfully.
+TC-REN-001,Policy Renewal,Renew policy,01/07/2026,Pass,Policy renewed successfully.
+TC-ESC-001,Agent Escalation,Transfer to live agent,01/07/2026,Pass,Live agent escalation completed successfully.
+TC-IR-001,Intent Routing,Route to New User Onboarding,01/07/2026,Pass,Correct intent identified and routed successfully.
+TC-IR-002,Intent Routing,Route to Policy Inquiry,01/07/2026,Pass,Correct intent identified and routed successfully.
+TC-IR-003,Intent Routing,Route to Benefits Information,01/07/2026,Pass,Correct intent identified and routed successfully.
+TC-IR-004,Intent Routing,Route to Claim Status,01/07/2026,Pass,Correct intent identified and routed successfully.
+TC-IR-005,Intent Routing,Route to New Claim Initiation,01/07/2026,Pass,Correct intent identified and routed successfully.
+TC-IR-006,Intent Routing,Route to Policy Renewal,01/07/2026,Pass,Correct intent identified and routed successfully.
+TC-IR-007,Intent Routing,Route to Agent Escalation,01/07/2026,Pass,Correct intent identified and routed successfully.
+TC-EC-001,Authentication Edge Case,Invalid phone number,01/07/2026,Pass,Invalid input handled correctly.
+TC-EC-002,Authentication Edge Case,Invalid date of birth,01/07/2026,Pass,Invalid DOB handled correctly.
+TC-EC-003,Authentication Edge Case,Incorrect verification answer,01/07/2026,Pass,Incorrect verification response handled correctly.
