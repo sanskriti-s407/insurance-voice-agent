@@ -1,0 +1,11 @@
+﻿Eval ID,Happy Path,Execution Date,Evaluation Method,Semantic Similarity,Tool Correctness,Hallucination,P90 Latency (ms),Overall Result,Failed Step(s),Remarks
+EVAL-010,Check_claimstatus,7/2/2026,Naive Replay,3.8/4,100%,No,5166ms,Pass,none,Evaluation passed successfully with expected response and correct tool execution.
+EVAL-011,policy_renewal_gp,7/2/2026,Naive Replay,3.8/4,93%,No,4408ms,Fail,Tool correctness,Tool execution accuracy needs improvement despite high semantic similarity.
+EVAL-012,policy_details,7/2/2026,Naive Replay,3.7/4,92%,No,3332ms,Fail,Tool correctness,"Policy details retrieved, but tool execution requires refinement."
+EVAL-013,create_claim,7/2/2026,Naive Replay,3.4/4,72%,No,1586ms,Fail,"semantic similarity , Tool correctness",Response and tool execution require improvement to meet evaluation criteria.
+EVAL-014,human_escalation,7/2/2026,Naive Replay,4/4,81%,No,5857ms,Fail,Tool correctness,"Intent recognized correctly, but tool execution needs optimization."
+EVAL-015,benefits_info,7/2/2026,Naive Replay,4/4,92%,No,3448ms,Fail,Tool correctness,Benefits information generated correctly; tool execution requires improvement.
+EVAL-016,motor_onboarding,7/2/2026,Naive Replay,3.8/4,83%,No,1671ms,Fail,Tool correctness,Motor onboarding flow completed; tool execution needs refinement.
+EVAL-017,health_onaboarding,7/2/2026,Naive Replay,3.2/4,56%,No,2043ms,Fail,"semantic similarity , Tool correctness",Health onboarding requires improvement in response quality and tool execution.
+EVAL-018,life_onaboarding,7/2/2026,Naive Replay,3.3/4,72%,No,1554ms,Fail,"semantic similarity , Tool correctness",Life onboarding requires improvement in response quality and tool execution.
+,,,,,,,,,,
