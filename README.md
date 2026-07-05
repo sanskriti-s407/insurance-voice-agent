@@ -46,6 +46,7 @@ This project proposes an AI-powered Insurance Conversational Voice Agent built u
 * **apis/** → API contracts and sample/mock API responses.
 * **mock-data/** → Sample customer, policy, and claim datasets used for testing and development.
 * **testing/** → Test strategy, happy path scenarios, authentication tests, routing tests, and regression coverage.
+* **testing_excel_reports/** → Manual testing reports, Golden Evaluation reports, Scenario Evaluation reports, regression testing reports, and QA testing artifacts in CSV/Excel format.
 * **architecture/** → Solution architecture, authentication workflow, intent routing, and end-to-end process diagrams.
 * **demo/** → Demo script, test utterances, screenshots, and demo artifacts.
 
