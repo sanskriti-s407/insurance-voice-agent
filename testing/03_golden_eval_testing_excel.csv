@@ -12,5 +12,5 @@ EVAL-019,change_intent ,7/5/2026,Naive Replay,3.9/4,100%,No,6408ms,Pass,None,Int
 EVAL-020,out_of_scope,7/5/2026,Naive Replay,4/4,100%,No,977ms,Pass,None,Unsupported query handled appropriately.
 EVAL-021,invalid_dob,7/5/2026,Naive Replay,4/4,88%,No,5163ms,Fail,None,Authentication validation requires improvement.
 EVAL-022,invalid_phone_number,7/5/2026,Naive Replay,2.4/4,100%,No,7201ms,Fail,None,Phone number validation requires refinement.
-EVAL-023,invalid_security_ans,7/5/2026,Naive Replay,4/4,100%,No,5004ms,Pass,None,Security answer verification requires improvement.
+EVAL-023,invalid_security_ans,7/5/2026,Naive Replay,4/4,100%,No,5004ms,Pass,None,Invalid security answer handled successfully as expected.
 EVAL-024,verification_checkpoints,7/5/2026,Naive Replay,4/4,100%,No,3546ms,Pass,None,Verification successful.
