@@ -1,9 +1,9 @@
 ﻿Eval ID,Golden Name ,Execution Date,Evaluation Method,Semantic Similarity,Tool Correctness,Hallucination,P90 Latency (ms),Overall Result,Failed Step(s),Remarks
-EVAL-010,Check_claimstatus,7/3/2026,Naive Replay,3.8/4,100%,No,1244ms,Pass,None,Claim status retrieved successfully.
+EVAL-010,Check_claimstatus,7/6/2026,Naive Replay,3.8/4,100%,No,1244ms,Pass,None,Claim status retrieved successfully.
 EVAL-011,policy_renewal_gp,7/3/2026,Naive Replay,4/4,100%,No,6188ms,Pass,None,Policy renewal completed successfully.
 EVAL-012,policy_details,7/3/2026,Naive Replay,4/4,100%,No,5423ms,Pass,None,Policy details retrieved successfully.
 EVAL-013,create_claim,7/3/2026,Naive Replay,4/4,100%,No,4209ms,Pass,None,Claim created successfully.
-EVAL-014,human_escalation,7/3/2026,Naive Replay,4/4,100%,No,6476ms,Pass,None, successful human escalation flow.
+EVAL-014,human_escalation,7/6/2026,Naive Replay,4/4,100%,No,6476ms,Pass,None, successful human escalation flow.
 EVAL-015,benefits_info,7/3/2026,Naive Replay,4/4,100%,No,6735ms,Pass,None,Benefits information displayed successfully.
 EVAL-016,motor_onboarding,7/3/2026,Naive Replay,4/4,100%,No,1750ms,Pass,None,Motor onboarding completed successfully.
 EVAL-017,health_onaboarding,7/3/2026,Naive Replay,3.9/4,100%,No,1959ms,Pass,None,Health onboarding completed successfully.
@@ -11,6 +11,6 @@ EVAL-018,life_onaboarding,7/3/2026,Naive Replay,3.8/4,100%,No,1945ms,Pass,None,L
 EVAL-019,change_intent ,7/5/2026,Naive Replay,3.9/4,100%,No,6408ms,Pass,None,Intent change handled successfully.
 EVAL-020,out_of_scope,7/5/2026,Naive Replay,4/4,100%,No,977ms,Pass,None,Unsupported query handled appropriately.
 EVAL-021,invalid_dob,7/5/2026,Naive Replay,4/4,88%,No,5163ms,Fail,None,Authentication validation requires improvement.
-EVAL-022,invalid_phone_number,7/5/2026,Naive Replay,2.4/4,100%,No,7201ms,Fail,None,Phone number validation requires refinement.
-EVAL-023,invalid_security_ans,7/5/2026,Naive Replay,4/4,100%,No,5004ms,Pass,None,Invalid security answer handled successfully as expected.
+EVAL-022,invalid_phone_number,7/6/2026,Naive Replay,4/4,100%,No,7201ms,Pass,None,Invalid phone number handled successfully.
+EVAL-023,invalid_security_ans,7/6/2026,Naive Replay,4/4,100%,No,5004ms,Pass,None,Invalid security answer handled successfully as expected.
 EVAL-024,verification_checkpoints,7/5/2026,Naive Replay,4/4,100%,No,3546ms,Pass,None,Verification successful.
