@@ -10,7 +10,7 @@ EVAL-017,health_onaboarding,7/3/2026,Naive Replay,3.9/4,100%,No,1959ms,Pass,None
 EVAL-018,life_onaboarding,7/3/2026,Naive Replay,3.8/4,100%,No,1945ms,Pass,None,Life onboarding completed successfully.
 EVAL-019,change_intent ,7/5/2026,Naive Replay,3.9/4,100%,No,6408ms,Pass,None,Intent change handled successfully.
 EVAL-020,out_of_scope,7/5/2026,Naive Replay,4/4,100%,No,977ms,Pass,None,Unsupported query handled appropriately.
-EVAL-021,invalid_dob,7/5/2026,Naive Replay,4/4,88%,No,5163ms,Fail,None,Authentication validation requires improvement.
+EVAL-021,invalid_dob,7/6/2026,Naive Replay,4/4,100%,No,5163ms,Paa,None,Invalid dob handled successfuly.
 EVAL-022,invalid_phone_number,7/6/2026,Naive Replay,4/4,100%,No,7201ms,Pass,None,Invalid phone number handled successfully.
 EVAL-023,invalid_security_ans,7/6/2026,Naive Replay,4/4,100%,No,5004ms,Pass,None,Invalid security answer handled successfully as expected.
 EVAL-024,verification_checkpoints,7/5/2026,Naive Replay,4/4,100%,No,3546ms,Pass,None,Verification successful.
