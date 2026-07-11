@@ -39,14 +39,20 @@
 - **product_type**  
   Stores the insurance product selected during New User Onboarding (Motor, Health, Life, etc.).
 
-- **otp**  
-  Stores the One-Time Password entered by the customer during identity verification.
-
 - **vehicle_number**  
   Stores the vehicle registration number provided during Motor Insurance onboarding.
 
 - **chassis_number**  
   Stores the chassis number used for vehicle verification.
+
+- **request_type**  
+  Stores the type of customer update request (DOB, Mobile Number,etc.).
+
+- **request_id**  
+  Stores the unique request ID generated after submitting an update request.
+
+- **new_value**  
+  Stores the new information submitted by the customer for the update request.
 
 - **escalation_reason**  
   Stores the customer's reason for requesting human assistance.
