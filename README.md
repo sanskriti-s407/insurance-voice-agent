@@ -1,55 +1,266 @@
 # Insurance Conversational AI Voice Agent
 
-## Project Overview
-Insurance companies receive a high volume of customer requests related to policy inquiries, benefits information, claims processing, claim status tracking, policy renewals, and escalation requests. These requests are traditionally handled manually, which increases customer wait time, support workload, and operational cost.
+## Overview
 
-This project proposes an AI-powered Insurance Conversational Voice Agent built using Google Dialogflow CX / CX Agent Studio. The agent securely authenticates customers, detects customer intent, executes policy and claims workflows using mock APIs, and escalates complex issues to a live support agent with conversation context.
+The Insurance Conversational AI Voice Agent is an AI-powered virtual assistant developed using **CX Agent Studio**. It automates common insurance customer interactions, including customer authentication, policy management, claims processing, customer onboarding, update requests, and human escalation.
 
-## Business Objectives
-- Reduce call handling time.
-- Improve customer experience.
-- Provide faster claim and policy services.
-- Reduce operational workload.
-- Provide consistent and accurate responses.
-- Support secure user authentication.
-- Enable seamless escalation to human agents.
+The solution uses a modular, multi-agent architecture to provide secure, scalable, and context-aware conversations while integrating with backend services through webhooks and mock APIs.
+
+---
+
+## Business Problem
+
+Insurance contact centers receive a large volume of customer requests every day, including:
+
+- Policy inquiries
+- Benefits and coverage information
+- Claim status tracking
+- New claim initiation
+- Policy renewals
+- Customer information updates
+- New policy purchases
+
+Handling these requests manually increases customer wait times, operational costs, and support workload while leading to inconsistent customer experiences.
+
+This project demonstrates how Conversational AI can automate these processes while maintaining security, accuracy, and a seamless customer experience.
+
+---
+
+## Solution Overview
+
+The Insurance Voice Agent authenticates customers, identifies their intent, routes requests to the appropriate business service, invokes backend APIs, and provides contextual responses.
+
+For scenarios requiring manual intervention, the agent creates a support case and transfers the complete conversation context to a live support representative.
+
+The solution supports both existing and new customers through dedicated onboarding and policy management workflows.
+
+---
+
+## Key Features
+
+### Customer Authentication
+
+- Secure customer authentication
+- Mobile number and date of birth verification
+- Security question validation
+- Session management
+- Authentication retry handling
+
+### Policy Services
+
+- Multi-policy handling
+- Policy inquiry
+- Benefits information
+- Policy renewal
+- Proactive renewal notifications
+
+### Claims Management
+
+- Claim status tracking
+- New claim initiation
+
+### Customer Onboarding
+
+- Product coverage information
+- New customer registration
+- New policy purchase
+
+### Customer Update Requests
+
+- Submit customer information update requests
+- Track update request status
+- Human approval workflow for sensitive updates
+
+### Human Escalation
+
+- Support case creation
+- Conversation context transfer
+- Live agent handoff
+
+---
+
+## Solution Architecture
+
+```
+                    Customer
+                        │
+                        ▼
+          Insurance Voice Agent
+      (Authentication + Intent Routing)
+                        │
+     ┌────────────┬────────────┬────────────┬────────────┐
+     │            │            │            │
+Policy Services  Claims   Customer    Update Request
+                            Onboarding
+     │            │            │            │
+     └────────────┴────────────┴────────────┘
+                        │
+                        ▼
+               Backend Webhook APIs
+                        │
+                        ▼
+                BigQuery Dataset
+                        │
+                        ▼
+              Human Support (Escalation)
+```
+
+---
+
+## Technology Stack
+
+| Category | Technology |
+|----------|------------|
+| Conversational AI | Google Cloud Platform |
+| Agent Platform | CX Agent Studio |
+| Backend | Cloud Run / Python |
+| Data Storage | BigQuery |
+| API Integration | Webhooks |
+| Data Format | JSON |
+| Documentation | GitHub Markdown |
+
+---
 
 ## Core Capabilities
-- Authentication Layer
-- New User Onboarding / New Policy Purchase
+
+- Customer Authentication
+- Intent Detection
+- Context Management
+- Multi-Policy Handling
 - Policy Inquiry
 - Benefits Information
 - Claim Status
 - New Claim Initiation
 - Policy Renewal
-- Agent Escalation
-- Intent Routing
-- Mock API Integration
+- Product Coverage
+- Customer Onboarding
+- Customer Update Requests
+- Request Status Tracking
+- Human Escalation
+- Backend API Integration
 
-## Technology Stack
-- Google Dialogflow CX
-- CX Agent Studio
-- Webhooks
-- Mock APIs
-- JSON Mock Dataset
-- GitHub Documentation
+---
 
-## Project Timeline
-- Week 1: Foundation + Happy Path
-- Week 2: Edge Cases + Fallbacks + Evaluation
-- Week 3: Integration + Testing + Final Demo
+## Project Structure
 
+```
+Insurance-Voice-Agent/
+│
+├── architecture/
+├── apis/
+├── cx-agent-studio-design/
+├── demo/
+├── docs/
+├── mock-data/
+├── testing/
+├── testing_excel_reports/
+└── README.md
+```
 
 ### Folder Description
-* **docs/** → Business requirements, user stories, acceptance criteria, authentication design, conversation flows, and guardrails.
-* **cx-agent-studio-design/** → Dialogflow CX implementation design including flows, pages, intents, entities, route groups, session parameters, and webhooks.
-* **apis/** → API contracts and sample/mock API responses.
-* **mock-data/** → Sample customer, policy, and claim datasets used for testing and development.
-* **testing/** → Test strategy, happy path scenarios, authentication tests, routing tests, and regression coverage.
-* **testing_excel_reports/** → Manual testing reports, Golden Evaluation reports, Scenario Evaluation reports, regression testing reports, and QA testing artifacts in CSV/Excel format.
-* **architecture/** → Solution architecture, authentication workflow, intent routing, and end-to-end process diagrams.
-* **demo/** → Demo script, test utterances, screenshots, and demo artifacts.
 
-`
-## Week 1 Demo Scope
-For Week 1, the demo focuses on authentication, intent routing, happy path flows, and mock API-driven responses for primary insurance services.
+| Folder | Description |
+|---------|-------------|
+| **architecture/** | High-level architecture, authentication workflow, intent routing, and system diagrams |
+| **apis/** | Backend API contracts and sample requests/responses |
+| **cx-agent-studio-design/** | Agent design including flows, intents, entities, session parameters, webhooks, and implementation details |
+| **demo/** | Demo scripts, screenshots, and sample utterances |
+| **docs/** | Business requirements, user stories, acceptance criteria, authentication design, conversation flows, and guardrails |
+| **mock-data/** | Sample customer, policy, claim, and request datasets |
+| **testing/** | Test strategy, functional testing, regression testing, and evaluation scenarios |
+| **testing_excel_reports/** | Golden evaluations, scenario evaluations, QA reports, regression reports, and KPI tracking |
+
+---
+
+## Backend APIs
+
+The solution integrates with backend services through webhooks.
+
+| API | Purpose |
+|------|---------|
+| `validateUser()` | Authenticate existing customers |
+| `getPolicyDetails()` | Retrieve policy information |
+| `getBenefitsInfo()` | Retrieve policy benefits |
+| `getClaimsStatus()` | Track claim status |
+| `initiateClaim()` | Create a new claim |
+| `renewPolicy()` | Renew an existing policy |
+| `getProductCoverage()` | Retrieve available insurance products |
+| `OnBoardUser()` | Register a new customer and create a policy |
+| `RequestUpdate()` | Submit customer information update requests |
+| `getRequestStatus()` | Track update request status |
+| `createCase()` | Create a customer support case |
+| `escalateToAgent()` | Transfer conversation to a live agent |
+
+---
+
+## Project Timeline
+
+### Week 1 — Foundation
+
+- Authentication
+- Intent Routing
+- Policy Services
+- Claims
+- Happy Path Implementation
+- Backend API Integration
+
+### Week 2 — Feature Enhancements
+
+- Customer Onboarding
+- Product Coverage
+- Multi-Policy Handling
+- Update Request Workflow
+- Proactive Policy Renewal
+- Improved Prompt Engineering
+- Fallbacks and callbacks
+- Security Guardrails
+
+### Week 3 — Final Evaluation
+
+- End-to-End Testing
+- Golden Evaluations
+- Scenario Evaluations
+- Regression Testing
+- KPI Validation
+- Production Readiness Assessment
+- Final Demonstration
+
+---
+
+## Testing & Evaluation
+
+The solution has been evaluated using multiple testing strategies:
+
+- Authentication Testing
+- Golden Evaluations
+- Scenario Evaluations
+- End-to-End Testing
+
+### Evaluation Metrics
+
+- Intent Recognition Accuracy
+- Automation Rate
+- Average Handle Time (AHT)
+- Escalation Rate
+- Task Completion Rate
+
+---
+
+## Design Principles
+
+The solution was designed around the following principles:
+
+- Modular architecture
+- Secure authentication
+- Context-aware conversations
+- Reusable business components
+- Scalable flow design
+- Reliable backend integration
+- Graceful error handling
+- Seamless human handoff
+
+---
+
+## Final Outcome
+
+This project demonstrates a production-oriented Conversational AI solution for the insurance industry by combining secure authentication, intelligent intent routing, modular business workflows, backend API integration, comprehensive testing, and seamless human escalation to deliver an efficient and scalable customer support experience.
