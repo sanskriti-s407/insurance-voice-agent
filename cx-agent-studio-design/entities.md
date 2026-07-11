@@ -1,32 +1,58 @@
 # CX Agent Studio Entities
 
 ## System Entities
-- @sys.phone-number
-- @sys.date
-- @sys.any
+### @sys.phone-number
+Examples:
+- +91 9876543210
+- +91 9123456789
+
+### @sys.date
+Examples:
+- 15-05-1990
+- 2003-04-12
+- 01 January 2026
+
+### @sys.any
+Examples:
+- I need help
+- Talk to an agent
+- Update my details
 
 ## Custom Entities
 
+### @customer_id
+Examples:
+- CUST-001
+- CUST-002
+- CUST-003
+- CUST-004
+- CUST-005
+  
 ### @policy_id
 Examples:
-1. POL-MOTOR-001
-2. POL-MOTOR-002
-3. POL-MOTOR-003
-4. POL-MOTOR-004
-5. POL-MOTOR-005
+- POL-MOTOR-001
+- POL-MOTOR-002
+- POL-MOTOR-003
+- POL-MOTOR-004
+- POL-MOTOR-005
 
 ### @claim_id
 Examples:
-- CLM12345
-- CLM67890
-- CLM789012
+- CLM-2026-001
+- CLM-2026-002
+- CLM-2026-003
 
 ### @insurance_product_type
 Examples:
-- Motor Insurance
 - Vehicle Insurance
 - Health Insurance
 - Life Insurance
+
+### @policy_type
+Examples:
+- Motor
+- Health
+- Life
 
 ### @yes_no
 Examples:
@@ -34,11 +60,6 @@ Examples:
 - No
 - Continue
 - Stop
-
-### @otp
-Examples:
-- 123456
-- 987654
 
 ### @vehicle_number
 Examples:
@@ -49,3 +70,22 @@ Examples:
 Examples:
 - CHS123456789
 - MTR987654321
+
+### @customer_id
+Examples:
+- C001
+- C002
+- C003
+
+### @request_type
+Examples:
+- Update Mobile Number
+- Update DOB
+- Update Security Question
+
+### @request_id
+Examples:
+- REQ1001
+- REQ1002
+- REQ1003
+
