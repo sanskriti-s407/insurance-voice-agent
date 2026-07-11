@@ -166,29 +166,6 @@ Create a customer support case for issues that require further investigation or 
 
 ---
 
-## escalateToAgent(ticket_id)
-
-### Purpose
-Transfer the customer's conversation and case details to a live support agent.
-
-### Request
-```json
-{
-  "ticketId": "T56789",
-  "conversationContext": "Customer requested escalation after unresolved issue."
-}
-```
-
-### Response
-```json
-{
-  "status": "Transferred",
-  "agentAvailable": true
-}
-```
-
----
-
 ## getProductCoverage()
 
 ### Purpose
