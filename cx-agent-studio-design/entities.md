@@ -9,11 +9,11 @@
 
 ### @policy_id
 Examples:
-- P101
-- P102
-- P103
-- P104
-- P105
+1. POL-MOTOR-001
+2. POL-MOTOR-002
+3. POL-MOTOR-003
+4. POL-MOTOR-004
+5. POL-MOTOR-005
 
 ### @claim_id
 Examples:
