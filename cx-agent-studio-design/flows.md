@@ -16,6 +16,7 @@
 
 ---
 
+
 ```mermaid
 flowchart TD
 
@@ -23,22 +24,23 @@ A[Intent Routing]
 
 A --> B[Policy Services]
 A --> C[Claims]
-A --> D[Customer Onboarding]
+A --> D[Onboarding]
 A --> E[Update Request]
 A --> F[Human Escalation]
 
 %% Policy Services
-B --> B1[Policy Inquiry]
+B --> B1[Policy Details]
 B --> B2[Benefits Information]
 B --> B3[Policy Renewal]
 
 %% Claims
 C --> C1[Claim Status]
-C --> C2[New Claim]
+C --> C2[Initiate Claim]
 
-%% Customer Onboarding
-D --> D1[Product Coverage]
-D --> D2[New Policy Purchase]
+%% Onboarding
+D --> D1[Health Onboarding]
+D --> D2[Life Onboarding]
+D --> D3[Vehicle Onboarding]
 
 %% Update Request
 E --> E1[Submit Request]
@@ -46,8 +48,11 @@ E --> E2[Request Status]
 
 %% Human Escalation
 F --> F1[Create Case]
-F --> F2[Transfer to Live Agent]
+F1 --> F2[Transfer to Live Agent]
 ```
+
+
+
 
 ## Design Principle
 
