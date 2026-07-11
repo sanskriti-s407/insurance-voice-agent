@@ -51,6 +51,24 @@ Training Phrases:
 - Renew policy P101
 - Policy renewal
 
+## update_request
+Training Phrases:
+- I want to update my information
+- Update my address
+- Change my mobile number
+- Update my email
+- Change my date of birth
+- I need to modify my policy details
+
+## request_status
+Training Phrases:
+- Check my update request status
+- Track my update request
+- Is my update request approved?
+- Show my request status
+- What's the status of my request?
+- Check request status
+
 ## agent_escalation
 Training Phrases:
 - Talk to an agent
