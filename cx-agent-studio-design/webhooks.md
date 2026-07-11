@@ -1,45 +1,68 @@
 # Webhooks
 
 ## Webhook Resource
-Name: Insurance_Backend_Webhook
+
+**Name:** `Insurance_Backend_Webhook`
+
+---
 
 ## Webhook Actions
 
 ### validateUser()
-Authenticates customer using mobile number, DOB, and verification answers.
+
+Authenticates an existing customer using the registered mobile number, date of birth, and verification answers.
+
 
 ### getProductCoverage()
-Retrieves insurance product catalogue and coverage information.
 
-### sendOTP(phone)
-Sends OTP to new customer's mobile number.
+Retrieves the available insurance products along with their coverage details, eligibility criteria, and premium information.
 
-### verifyOTP(phone, otp)
-Verifies OTP entered by customer.
 
-### verifyVehicle(vehicle_number, chassis_number)
-Validates motor insurance vehicle details.
+### OnBoardUser()
 
-### createPolicy(product_type, customer_details, vehicle_details)
-Creates a new policy for a new customer.
+Registers a new customer and creates a new insurance policy after collecting the required customer details.
 
-### getPolicyDetails(policy_id)
-Fetches policy details.
 
-### getBenefitsInfo(policy_id)
-Fetches policy benefits and inclusions.
+### getPolicyDetails()
 
-### getClaimsStatus(claim_id)
-Retrieves claim status and updates.
+Retrieves detailed information about the selected insurance policy.
 
-### initiateClaim(policy_id)
-Creates a new claim.
 
-### renewPolicy(policy_id)
-Processes policy renewal.
+### getBenefitsInfo()
 
-### createCase(issue)
-Creates support case or ticket.
+Fetches the benefits, coverage, and services included in the selected insurance policy.
 
-### escalateToAgent(ticket_id)
-Transfers conversation to live agent with context.
+
+### getClaimsStatus()
+
+Retrieves the latest status and details of an existing insurance claim.
+
+
+### initiateClaim()
+
+Creates a new insurance claim for the selected policy.
+
+
+### renewPolicy()
+
+Processes the renewal of an existing insurance policy and returns the updated validity period.
+
+
+### RequestUpdate()
+
+Submits a customer information update request (such as address, mobile number, email, or date of birth) for processing.
+
+
+### getRequestStatus()
+
+Retrieves the current status of a previously submitted customer update request.
+
+
+### createCase()
+
+Creates a customer support case for requests requiring manual assistance or investigation.
+
+
+### escalateToAgent()
+
+Transfers the conversation, customer details, and complete conversation context to a live support agent.
