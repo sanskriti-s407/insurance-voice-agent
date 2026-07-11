@@ -88,12 +88,12 @@ The solution supports both existing and new customers through dedicated onboardi
           Insurance Voice Agent
       (Authentication + Intent Routing)
                         │
-     ┌────────────┬────────────┬────────────┬────────────┐
-     │            │            │            │
-Policy Services  Claims   Customer    Update Request
-                            Onboarding
-     │            │            │            │
-     └────────────┴────────────┴────────────┘
+     ┌────────────┬────────────┬────────────┬──────────────┐
+     │            │            │            │              |
+Policy Services  Claims    Customer    Update Request    Human
+                          Onboarding                   Escalation
+     │            │            │            │              |
+     └────────────┴────────────┴────────────┴──────────────┘
                         │
                         ▼
                Backend Webhook APIs
