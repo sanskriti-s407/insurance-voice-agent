@@ -16,6 +16,39 @@
 
 ---
 
+```mermaid
+flowchart TD
+
+A[Intent Routing]
+
+A --> B[Policy Services]
+A --> C[Claims]
+A --> D[Customer Onboarding]
+A --> E[Update Request]
+A --> F[Human Escalation]
+
+%% Policy Services
+B --> B1[Policy Inquiry]
+B --> B2[Benefits Information]
+B --> B3[Policy Renewal]
+
+%% Claims
+C --> C1[Claim Status]
+C --> C2[New Claim]
+
+%% Customer Onboarding
+D --> D1[Product Coverage]
+D --> D2[New Policy Purchase]
+
+%% Update Request
+E --> E1[Submit Request]
+E --> E2[Request Status]
+
+%% Human Escalation
+F --> F1[Create Case]
+F --> F2[Transfer to Live Agent]
+```
+
 ## Design Principle
 
 Authentication is the default entry flow for existing customers. New customers are routed directly to the New User Onboarding Flow.
