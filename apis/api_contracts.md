@@ -3,7 +3,7 @@
 ## validateUser()
 
 ### Purpose
-Authenticate customer using phone, DOB, and verification answers.
+Authenticate customer using phone number, date of birth, and verification answers before granting access to insurance services.
 
 ### Request
 ```json
@@ -23,7 +23,12 @@ Authenticate customer using phone, DOB, and verification answers.
 }
 ```
 
+---
+
 ## getPolicyDetails(policy_id)
+
+### Purpose
+Retrieve the details of a customer's insurance policy using the policy ID.
 
 ### Request
 ```json
@@ -43,7 +48,12 @@ Authenticate customer using phone, DOB, and verification answers.
 }
 ```
 
+---
+
 ## getClaimsStatus(claim_id)
+
+### Purpose
+Retrieve the current status and details of an insurance claim.
 
 ### Request
 ```json
@@ -62,7 +72,12 @@ Authenticate customer using phone, DOB, and verification answers.
 }
 ```
 
+---
+
 ## initiateClaim(policy_id)
+
+### Purpose
+Initiate a new insurance claim for the specified policy.
 
 ### Request
 ```json
@@ -79,7 +94,12 @@ Authenticate customer using phone, DOB, and verification answers.
 }
 ```
 
+---
+
 ## getBenefitsInfo(policy_id)
+
+### Purpose
+Retrieve the list of benefits and coverage included in a policy.
 
 ### Request
 ```json
@@ -91,11 +111,20 @@ Authenticate customer using phone, DOB, and verification answers.
 ### Response
 ```json
 {
-  "benefits": ["Accident Cover", "Cashless Garage", "Roadside Assistance"]
+  "benefits": [
+    "Accident Cover",
+    "Cashless Garage",
+    "Roadside Assistance"
+  ]
 }
 ```
 
+---
+
 ## renewPolicy(policy_id)
+
+### Purpose
+Renew an existing insurance policy and return the updated validity period.
 
 ### Request
 ```json
@@ -112,7 +141,12 @@ Authenticate customer using phone, DOB, and verification answers.
 }
 ```
 
+---
+
 ## createCase(issue)
+
+### Purpose
+Create a customer support case for issues that require further investigation or assistance.
 
 ### Request
 ```json
@@ -130,7 +164,12 @@ Authenticate customer using phone, DOB, and verification answers.
 }
 ```
 
+---
+
 ## escalateToAgent(ticket_id)
+
+### Purpose
+Transfer the customer's conversation and case details to a live support agent.
 
 ### Request
 ```json
@@ -148,7 +187,12 @@ Authenticate customer using phone, DOB, and verification answers.
 }
 ```
 
+---
+
 ## getProductCoverage()
+
+### Purpose
+Retrieve the coverage details, eligibility, and premium information for an insurance product.
 
 ### Request
 ```json
@@ -172,12 +216,17 @@ Authenticate customer using phone, DOB, and verification answers.
 }
 ```
 
+---
+
 ## OnBoardUser()
+
+### Purpose
+Register a new customer and create a new insurance policy after successful onboarding.
 
 ### Request
 ```json
 {
- "customerName": "Amit Verma",
+  "customerName": "Amit Verma",
   "phone": "9876543210",
   "dob": "1990-05-15",
   "productType": "Vehicle Insurance",
@@ -196,13 +245,18 @@ Authenticate customer using phone, DOB, and verification answers.
 }
 ```
 
+---
+
 ## RequestUpdate()
+
+### Purpose
+Submit a request to update customer or policy information for review and approval.
 
 ### Request
 ```json
 {
- "customerId": "C001",
-  "requestType": "Update dob",
+  "customerId": "C001",
+  "requestType": "Update DOB",
   "newValue": "2003-04-12"
 }
 ```
@@ -216,12 +270,17 @@ Authenticate customer using phone, DOB, and verification answers.
 }
 ```
 
+---
+
 ## getRequestStatus()
+
+### Purpose
+Retrieve the current status of a previously submitted customer update request.
 
 ### Request
 ```json
 {
- "requestId": "REQ1001"
+  "requestId": "REQ1001"
 }
 ```
 
