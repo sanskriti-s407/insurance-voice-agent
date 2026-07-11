@@ -1,0 +1,99 @@
+# Week 2 Demo Script
+
+## Demo Objective
+
+Show that the Insurance Voice Agent can handle multiple insurance products, support new customer onboarding, manage multiple policies, process customer update requests, and seamlessly transfer conversations to a live agent while preserving context.
+
+---
+
+## Demo Sequence
+
+### 1. New Customer Onboarding
+
+**User says:** "I want to buy a new insurance policy."
+
+**Expected:**
+- Bot displays available insurance products.
+- Customer selects Motor, Health, or Life Insurance.
+- Bot shows product coverage.
+- Bot collects customer details.
+- New customer profile and policy are created successfully.
+
+---
+
+### 2. Multi-Policy Selection
+
+**User says:** "Show my policy details."
+
+**Expected:**
+- Bot detects multiple policies linked to the customer.
+- Bot asks the customer to select a policy.
+- Customer selects the desired policy.
+- Bot retrieves and displays the corresponding policy details.
+
+---
+
+### 3. Benefits Information
+
+**User says:** "What benefits are included in my Health Insurance?"
+
+**Expected:**
+- Bot retrieves and displays the policy benefits and coverage information.
+
+---
+
+### 4. Claim Status
+
+**User says:** "Track my Motor Insurance claim."
+
+**Expected:**
+- Bot retrieves the latest claim status and claim details.
+
+---
+
+### 5. New Claim Initiation
+
+**User says:** "I want to file a claim."
+
+**Expected:**
+- Bot initiates a new claim.
+- A new Claim ID is generated and shared with the customer.
+
+---
+
+### 6. Policy Renewal
+
+**User says:** "Renew my Life Insurance policy."
+
+**Expected:**
+- Bot renews the selected policy.
+- Updated policy validity is displayed.
+
+---
+
+### 7. Customer Update Request
+
+**User says:** "I want to update my address."
+
+**Expected:**
+- Bot collects the updated information.
+- Bot authenticates the User.
+- Backend is updated.
+- updation is succeed.
+
+---
+
+### 9. Human Escalation
+
+**User says:** "I want to speak to a customer support representative."
+
+**Expected:**
+- Bot creates a support case.
+- Conversation context is transferred.
+- Customer is connected to a live support agent.
+
+---
+
+## Closing Line
+
+This Week 2 demo showcases the enhanced capabilities of the Insurance Voice Agent, including customer onboarding, multi-policy management, customer information update requests, improved intent routing, and seamless human escalation with full conversation context. These enhancements make the solution more scalable, modular, and production-ready.
