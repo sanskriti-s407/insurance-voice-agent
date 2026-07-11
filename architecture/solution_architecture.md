@@ -14,7 +14,9 @@ The following information should be transferred during escalation:
 - Customer ID
 - Phone Number
 - Selected Policy ID
+- Selected Policy Type
 - Selected Claim ID
 - Last Intent
 - Conversation Summary
-- Ticket ID
+- Updated Request ID (if applicable)
+- Ticket ID / Case ID
