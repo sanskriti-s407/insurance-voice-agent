@@ -171,3 +171,66 @@ Authenticate customer using phone, DOB, and verification answers.
   "startingPremium": 4500
 }
 ```
+
+## OnBoardUser()
+
+### Request
+```json
+{
+ "customerName": "Amit Verma",
+  "phone": "9876543210",
+  "dob": "1990-05-15",
+  "productType": "Vehicle Insurance",
+  "email": "amit.verma@example.com",
+  "address": "Delhi, India"
+}
+```
+
+### Response
+```json
+{
+  "status": "Success",
+  "customerId": "C001",
+  "policyId": "P101",
+  "message": "Customer onboarded successfully."
+}
+```
+
+## RequestUpdate()
+
+### Request
+```json
+{
+ "customerId": "C001",
+  "requestType": "Update dob",
+  "newValue": "2003-04-12"
+}
+```
+
+### Response
+```json
+{
+  "requestId": "REQ1001",
+  "status": "Submitted",
+  "message": "Your update request has been received and is under review."
+}
+```
+
+## getRequestStatus()
+
+### Request
+```json
+{
+ "requestId": "REQ1001"
+}
+```
+
+### Response
+```json
+{
+  "requestId": "REQ1001",
+  "status": "Approved",
+  "lastUpdated": "2026-07-11",
+  "remarks": "Customer address updated successfully."
+}
+```
