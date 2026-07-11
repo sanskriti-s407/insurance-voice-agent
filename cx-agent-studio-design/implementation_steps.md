@@ -1,5 +1,13 @@
 # CX Agent Studio Implementation Steps
 
+## Step 0: Environment Setup
+
+- Create a Google Cloud Project.
+- Enable required APIs.
+- Configure IAM roles.
+- Deploy backend services.
+- Connect CX Agent Studio.
+
 ## Step 1: Create Agent
 
 Create a new CX Agent Studio agent named:
@@ -81,26 +89,28 @@ Configure all session parameters listed in `session_parameters.md`, including:
 
 ## Step 7: Configure Webhooks
 
-Create one webhook resource:
+Create a webhook resource named:
 
 ```text
 Insurance_Backend_Webhook
 ```
 
-Configure fulfillment for the following backend APIs:
+Configure the webhook to invoke the appropriate backend API based on the customer's request.
 
-- validateUser()
-- getProductCoverage()
-- OnBoardUser()
-- getPolicyDetails()
-- getBenefitsInfo()
-- getClaimsStatus()
-- initiateClaim()
-- renewPolicy()
-- RequestUpdate()
-- getRequestStatus()
-- createCase()
-- escalateToAgent()
+| Fulfillment Tag | Backend API |
+|-----------------|-------------|
+| Authentication | `validateUser()` |
+| Policy Inquiry | `getPolicyDetails()` |
+| Benefits Information | `getBenefitsInfo()` |
+| Claim Status | `getClaimsStatus()` |
+| New Claim Initiation | `initiateClaim()` |
+| Policy Renewal | `renewPolicy()` |
+| Product Coverage | `getProductCoverage()` |
+| Customer Onboarding | `OnBoardUser()` |
+| Update Request | `RequestUpdate()` |
+| Request Status | `getRequestStatus()` |
+| Create Support Case | `createCase()` |
+| Agent Escalation | `escalateToAgent()` |
 
 ---
 
@@ -130,6 +140,16 @@ Create pages for:
 - Policy Renewal
 
 ---
+
+## Multi-Policy Handling
+
+If multiple policies exist:
+
+1. Fetch all policies.
+2. Display available policies.
+3. Ask customer to choose one.
+4. Store selected policy in session.
+5. Continue business flow.
 
 ### Claims Flow
 
@@ -162,11 +182,19 @@ Create pages for:
 
 ### Human Escalation Flow
 
-Create pages for:
+Trigger escalation when:
 
-- Create Case
-- Transfer to Live Agent
-- Send Conversation Context
+- Authentication fails
+- Webhook error
+- Customer requests an agent
+- Maximum retries reached
+
+Actions:
+
+1. createCase()
+2. escalateToAgent()
+3. Transfer conversation context
+4. 
 
 ---
 
