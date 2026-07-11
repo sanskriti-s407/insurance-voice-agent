@@ -147,3 +147,27 @@ Authenticate customer using phone, DOB, and verification answers.
   "agentAvailable": true
 }
 ```
+
+## getProductCoverage()
+
+### Request
+```json
+{
+  "productType": "Vehicle Insurance"
+}
+```
+
+### Response
+```json
+{
+  "productType": "Vehicle Insurance",
+  "coverage": [
+    "Accident Cover",
+    "Third Party Liability",
+    "Cashless Garage",
+    "Roadside Assistance"
+  ],
+  "eligibility": "Vehicle must be registered in India",
+  "startingPremium": 4500
+}
+```
