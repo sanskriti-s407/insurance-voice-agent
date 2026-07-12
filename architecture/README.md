@@ -1,10 +1,7 @@
 # Architecture Assets
 
 - end_to_end_flow.png
-
-
-![Uploading end to end flow.png…]()
-
+<img width="1536" height="1024" alt="end to end flow" src="https://github.com/user-attachments/assets/5e4c9d71-c90a-4985-b847-9891e28eb2aa" />
 
 
 - authentication_workflow.png
