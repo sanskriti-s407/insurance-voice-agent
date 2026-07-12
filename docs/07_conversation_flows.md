@@ -36,22 +36,22 @@ The Policy Services Agent handles:
 - Benefits Information
 - Policy Renewal
 
-## Flow Diagram
-
 ```mermaid
 flowchart TD
-    A[Authenticated Customer] --> B[Retrieve Customer Policies]
-    B --> C[Customer Selects Policy]
 
-    C --> D{Requested Service}
+A([Authenticated Customer])
+A --> B[Retrieve Customer Policies]
+B --> C[Select Policy]
 
-    D -->|Policy Details| E[getPolicyDetails()]
-    D -->|Benefits| F[getBenefitsInfo()]
-    D -->|Renewal| G[renewPolicy()]
+C --> D{Choose Service}
 
-    E --> H[Display Policy Details]
-    F --> I[Display Benefits]
-    G --> J[Display Renewal Confirmation]
+D -->|Policy Inquiry| E[Retrieve Policy Details]
+D -->|Benefits| F[Retrieve Benefits]
+D -->|Renewal| G[Process Renewal]
+
+E --> H[Show Policy Details]
+F --> I[Show Benefits]
+G --> J[Show Renewal Confirmation]
 ```
 
 ### Policy Inquiry Flow
