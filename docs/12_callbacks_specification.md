@@ -8,38 +8,6 @@ In the Happy Insurance Voice Agent, callbacks are used to improve reliability, s
 
 ---
 
-# Callback Execution Flow
-
-```
-Customer Request
-        │
-        ▼
-Before Model Callback
-        │
-        ▼
-Intent Detection
-        │
-        ▼
-Before Tool Callback
-        │
-        ▼
-Backend API
-        │
-        ▼
-After Tool Callback
-        │
-        ▼
-Model Generates Response
-        │
-        ▼
-After Model Callback
-        │
-        ▼
-Response Delivered to Customer
-```
-
----
-
 # Callback Types (WE USED)
 
 ## 1. Before Tool Callback
