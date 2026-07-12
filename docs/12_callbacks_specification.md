@@ -8,8 +8,6 @@ In the Happy Insurance Voice Agent, callbacks are used to improve reliability, s
 
 ---
 
-# Callback Types (WE USED)
-
 ## 1. Before Tool Callback
 
 ### Purpose
