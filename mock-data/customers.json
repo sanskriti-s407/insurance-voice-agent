@@ -5,7 +5,8 @@
     "phone": "9876543210",
     "dob": "1990-05-15",
     "policyIds": [
-      "P101"
+      "POL-MOTOR-001",
+      "POL-HEALTH-001"
     ]
   },
   {
@@ -14,7 +15,7 @@
     "phone": "9123456780",
     "dob": "1992-08-22",
     "policyIds": [
-      "P102"
+      "POL-LIFE-001"
     ]
   },
   {
@@ -23,7 +24,8 @@
     "phone": "9988776655",
     "dob": "1988-11-05",
     "policyIds": [
-      "P103"
+      "POL-MOTOR-002",
+      "POL-LIFE-002"
     ]
   },
   {
@@ -32,7 +34,18 @@
     "phone": "9090909090",
     "dob": "1995-03-18",
     "policyIds": [
-      "P104"
+      "POL-HEALTH-002"
+    ]
+  },
+  {
+    "customerId": "C005",
+    "name": "Arjun Kapoor",
+    "phone": "9012345678",
+    "dob": "1987-07-12",
+    "policyIds": [
+      "POL-MOTOR-003",
+      "POL-HEALTH-003",
+      "POL-LIFE-003"
     ]
   }
 ]
