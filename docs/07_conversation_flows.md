@@ -104,9 +104,8 @@ B --> C{Select Service}
 
 C -->|Claim Status| D[Retrieve Customer Claims]
 D --> E[Display Claim List]
-E --> F[Customer Selects Claim]
-F --> G[Retrieve Claim Status]
-G --> H[Display Claim Details]
+E --> F[Retrieve Claim Status]
+F --> G[Display Claim Details]
 
 C -->|New Claim| I[Display Eligible Policies]
 I --> J[Customer Selects Policy]
@@ -118,19 +117,15 @@ L --> M[Display Claim Confirmation]
 ### Claim Status Flow
 
 1. Customer requests claim status.
-2. Customer selects a policy.
-3. System retrieves associated claims.
-4. Customer selects a claim.
-5. System invokes **getClaimsStatus()**.
-6. Bot displays claim details.
+2. System invokes **getClaimsStatus()**.
+3. Bot displays claim details.
 
 ### New Claim Flow
 
 1. Customer requests to file a claim.
-2. Customer selects a policy.
-3. System invokes **initiateClaim()**.
-4. Claim is created successfully.
-5. Bot displays the generated Claim ID.
+2. System invokes **initiateClaim()**.
+3. Claim is created successfully.
+4. Bot displays the generated Claim ID.
 
 ---
 
