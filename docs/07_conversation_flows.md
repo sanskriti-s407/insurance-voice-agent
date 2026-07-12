@@ -94,19 +94,20 @@ The Claims Agent handles:
 
 ```mermaid
 flowchart TD
-    A[Authenticated Customer] --> B[Retrieve Policies]
-    B --> C[Customer Selects Policy]
 
-    C --> D{Requested Service}
+A[Authenticated Customer] --> B[Retrieve Customer Policies]
+B --> C[Customer Selects Policy]
 
-    D -->|Claim Status| E[Retrieve Claims]
-    E --> F[Customer Selects Claim]
-    F --> G[getClaimsStatus()]
-    G --> H[Display Claim Status]
+C --> D{Requested Service}
 
-    D -->|New Claim| I[initiateClaim()]
-    I --> J[Generate Claim ID]
-    J --> K[Display Claim ID]
+D -->|Claim Status| E[Retrieve Associated Claims]
+E --> F[Customer Selects Claim]
+F --> G[Retrieve Claim Status]
+G --> H[Display Claim Status]
+
+D -->|New Claim| I[Create New Claim]
+I --> J[Generate Claim ID]
+J --> K[Display Claim ID]
 ```
 
 ### Claim Status Flow
@@ -139,15 +140,16 @@ The Update Request Agent handles:
 
 ```mermaid
 flowchart TD
-    A[Authenticated Customer] --> B{Request Type}
 
-    B -->|Submit Update| C[Collect Updated Information]
-    C --> D[RequestUpdate()]
-    D --> E[Generate Request ID]
+A[Authenticated Customer] --> B{Request Type}
 
-    B -->|Request Status| F[Enter Request ID]
-    F --> G[getRequestStatus()]
-    G --> H[Display Current Status]
+B -->|Submit Update| C[Collect Updated Information]
+C --> D[Submit Update Request]
+D --> E[Generate Request ID]
+
+B -->|Check Status| F[Enter Request ID]
+F --> G[Retrieve Request Status]
+G --> H[Display Request Status]
 ```
 
 ### Submit Update Request Flow
@@ -173,12 +175,14 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[Customer Requests Human Assistance] --> B[Collect Escalation Reason]
-    B --> C[createCase()]
-    C --> D[Generate Ticket]
-    D --> E[Transfer Conversation Context]
-    E --> F[escalateToAgent()]
-    F --> G[Connected to Live Agent]
+
+A[Customer Requests Human Assistance]
+A --> B[Collect Escalation Reason]
+B --> C[Create Support Case]
+C --> D[Generate Ticket ID]
+D --> E[Transfer Conversation Context]
+E --> F[Transfer to Live Agent]
+F --> G[Connected to Support Agent]
 ```
 
 ### Flow Steps
