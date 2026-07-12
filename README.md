@@ -117,7 +117,7 @@ Policy Services  Claims    Customer    Update Request    Human
 | Data Storage | BigQuery |
 | API Integration | Webhooks |
 | Data Format | JSON |
-| Documentation | GitHub Markdown |
+| Documentation | GitHub Repo |
 
 ---
 
