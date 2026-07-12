@@ -199,19 +199,16 @@ The solution integrates with backend services through webhooks.
 
 - Authentication
 - Intent Routing
-- Policy Services
-- Claims
+- All Agent Creation
 - Happy Path Implementation
 - Backend API Integration
 
 ### Week 2 — Feature Enhancements
 
 - Customer Onboarding
-- Product Coverage
 - Multi-Policy Handling
 - Update Request Workflow
 - Proactive Policy Renewal
-- Improved Prompt Engineering
 - Fallbacks and callbacks
 - Security Guardrails
 
@@ -220,9 +217,7 @@ The solution integrates with backend services through webhooks.
 - End-to-End Testing
 - Golden Evaluations
 - Scenario Evaluations
-- Regression Testing
 - KPI Validation
-- Production Readiness Assessment
 - Final Demonstration
 
 ---
