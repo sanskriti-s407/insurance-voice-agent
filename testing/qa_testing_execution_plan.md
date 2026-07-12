@@ -47,6 +47,7 @@ The following modules will be tested:
 * Claim Status
 * New Claim Initiation
 * Policy Renewal
+* Update Request
 * Agent Escalation
 
 ## Example
@@ -75,26 +76,12 @@ Examples include:
 
 * Invalid phone number
 * Wrong DOB
-* Invalid Policy ID
-* Invalid Claim ID
 * API timeout
 * API error
 * User silence
 * User changes intent
 * No active policy
 * Claim already closed
-
-## Example
-
-**Scenario**
-
-Customer enters an invalid Policy ID.
-
-**Expected Result**
-
-The chatbot informs the customer that the policy could not be found, prompts for a valid Policy ID, follows the retry policy, and escalates if the retry limit is exceeded.
-
-Each edge case will be marked as **PASS** or **FAIL** after execution.
 
 ---
 
