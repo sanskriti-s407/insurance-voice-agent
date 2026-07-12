@@ -19,7 +19,7 @@
 18,I want to file a claim,Claims,initiateClaim, ,
 19,I had an accident yesterday,Claims,initiateClaim, ,
 20,My car got stolen what do I do?,Claims,initiateClaim, ,
-21,Someone hit my car in the parking lot,Claims,initiateClaim, ,
+21,Someone hit my car in the parking lot,Claims,initiateClaim,Pass ,
 22,I want to buy a new policy,Onboarding,OnBoardUser, ,
 23,I need motor insurance for my new Swift,Motor Onboarding,getProductCoverage + OnBoardUser, ,
 24,I want a family health plan,Health Onboarding,getProductCoverage + OnBoardUser, ,
