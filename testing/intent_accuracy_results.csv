@@ -1,4 +1,4 @@
-﻿Test No,User Utterance,Expected Route,Expected Tool/API,Pass/Fail,
+﻿Test No,User Utterance,Expected Route,Expected Tool/API,Pass/Fail
 1,What are my policy details?,Policy Services,getPolicy, 
 2,When does my policy expire?,Policy Services,getPolicy, 
 3,How much is my premium?,Policy Services,getPolicy, 
