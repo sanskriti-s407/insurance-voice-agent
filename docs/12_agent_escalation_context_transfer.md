@@ -1,132 +1,147 @@
-# Agent Escalation with Context Transfer
+# Human Escalation with Context Transfer
 
 ## Objective
 
-This document defines the conditions under which the Insurance Conversational AI Voice Agent transfers a customer to a live support agent and specifies the conversation context that must be transferred to ensure a seamless customer experience.
+This document defines when the Insurance Conversational AI Voice Agent transfers a customer to a live support agent and specifies the customer and conversation context that must accompany the transfer. The objective is to ensure a seamless transition without requiring customers to repeat previously shared information.
 
 ---
 
 # 1. Purpose
 
-The chatbot should escalate the conversation to a live support agent whenever it cannot successfully resolve the customer's request. Before transferring the conversation, the chatbot should pass all relevant customer information and conversation details to the live agent to eliminate the need for the customer to repeat information.
+Although the Insurance Voice Agent is designed to resolve most customer requests through automated workflows, certain situations require human intervention. When escalation is necessary, the agent should:
+
+- Create a support case.
+- Generate a unique case ID.
+- Transfer the complete conversation context.
+- Preserve the authenticated session and customer details.
+- Connect the customer to a live support representative.
 
 ---
 
 # 2. Escalation Triggers
 
-The chatbot should initiate agent escalation under the following conditions.
-
-| Trigger ID | Scenario                                        | Escalation Required |
-| ---------- | ----------------------------------------------- | ------------------- |
-| ESC-001    | Authentication failed after 3 attempts          | Yes                 |
-| ESC-002    | Customer repeatedly requests a live agent       | Yes                 |
-| ESC-003    | Backend API unavailable after retry limit       | Yes                 |
-| ESC-004    | Unexpected system error                         | Yes                 |
-| ESC-005    | Customer issue cannot be resolved automatically | Yes                 |
-| ESC-006    | Business rule requires manual review            | Yes                 |
+| Trigger ID | Scenario | Escalation |
+|------------|----------|------------|
+| ESC-001 | Authentication fails after 3 attempts | Required |
+| ESC-002 | Customer explicitly requests a human agent | Required |
+| ESC-003 | Backend API timeout after retry limit | Required |
+| ESC-004 | Backend service returns repeated errors | Required |
+| ESC-005 | Repeated No-Match events | Required |
+| ESC-006 | Repeated No-Input events | Required |
+| ESC-007 | Unsupported or unresolved customer request | Required |
+| ESC-008 | Update request requires manual review | Required |
+| ESC-009 | Unexpected system failure | Required |
 
 ---
 
-# 3. Context Information to Transfer
+# 3. Context Information Transferred
 
-When escalation occurs, the chatbot should transfer the following information to the live support agent.
+Before transferring the conversation, the following information should be packaged and shared with the live support agent.
 
-| Information              | Description                             |
-| ------------------------ | --------------------------------------- |
-| Customer Name            | Name of the authenticated customer      |
-| Registered Mobile Number | Customer's verified mobile number       |
-| Authentication Status    | Successful or Failed                    |
-| Customer ID              | Unique customer identifier              |
-| Policy ID                | Selected policy (if applicable)         |
-| Policy Type              | Vehicle, Health, or Life Insurance      |
-| Claim ID                 | Claim reference number (if available)   |
-| Current Intent           | Customer's current request              |
-| Conversation Summary     | Brief summary of the interaction        |
-| Previous Bot Responses   | Last chatbot responses                  |
-| Last API Invoked         | Most recent backend API called          |
-| API Status               | Success, Timeout, or Error              |
-| Escalation Reason        | Reason for transferring to a live agent |
-| Timestamp                | Date and time of escalation             |
+| Context | Description |
+|----------|-------------|
+| Case ID | Generated support case |
+| Customer ID | Authenticated customer identifier |
+| Customer Name | Customer name |
+| Registered Mobile Number | Verified mobile number |
+| Selected Policy | Policy currently being managed |
+| Policy Type | Motor, Health, or Life Insurance |
+| Claim ID | Selected claim (if applicable) |
+| Request ID | Update Request ID (if applicable) |
+| Current Business Agent | Policy Services, Claims, Update Requests, or Customer Onboarding |
+| Current Intent | Active customer request |
+| Last API Invoked | Most recent backend API |
+| API Status | Success, Timeout, or Error |
+| Escalation Reason | Reason for transfer |
+| Conversation Summary | Summary of customer interaction |
+| Timestamp | Date and time of escalation |
 
 ---
 
 # 4. Escalation Workflow
 
-### Step 1
-
-Identify that the customer's issue cannot be resolved automatically.
-
-### Step 2
-
-Inform the customer that the conversation will be transferred to a live support agent.
-
-### Step 3
-
-Collect and package the required conversation context.
-
-### Step 4
-
-Create a support case using the `createCase()` API.
-
-### Step 5
-
-Transfer the conversation and context to the live support agent.
-
-### Step 6
-
-Notify the customer that the transfer has been completed successfully.
+```text
+Customer Request
+        │
+        ▼
+Issue Cannot Be Resolved
+        │
+        ▼
+Inform Customer About Transfer
+        │
+        ▼
+Generate Conversation Summary
+        │
+        ▼
+Create Support Case
+(createCase())
+        │
+        ▼
+Generate Case ID
+        │
+        ▼
+Transfer Customer Context
+        │
+        ▼
+Transfer to Live Agent
+(escalateToAgent())
+        │
+        ▼
+Customer Connected
+```
 
 ---
 
-# 5. Expected Bot Responses
+# 5. Bot Responses
 
 ## Authentication Failure
 
-**Bot Response**
-
-> "I'm sorry, but I couldn't verify your identity after multiple attempts. I'll connect you with a live support agent for further assistance."
+> "I couldn't verify your identity after multiple attempts. I'll connect you with a support representative who can assist you further."
 
 ---
 
-## API Failure
+## Backend Service Unavailable
 
-**Bot Response**
-
-> "Our system is currently unavailable. I'll transfer your request to a live support agent who can assist you."
+> "I'm unable to access the requested information at the moment. I'll transfer your conversation to a support representative for further assistance."
 
 ---
 
-## Customer Requests Human Support
+## Customer Requests Human Assistance
 
-**Bot Response**
+> "Certainly. I'll create a support case and transfer your conversation to a live support representative."
 
-> "Sure. I'll connect you to a live support agent. Please wait while I transfer your conversation."
+---
+
+## Update Request Submitted
+
+> "Your update request has been submitted successfully. Since these requests require manual review, I'll connect you with a support representative if you need any additional assistance."
 
 ---
 
 # 6. Acceptance Criteria
 
-The escalation feature will be considered successful when:
+The human escalation feature is considered successful when:
 
-* The chatbot correctly identifies escalation scenarios.
-* A support case is created successfully.
-* Customer authentication status is transferred.
-* Relevant customer, policy, and claim details are transferred.
-* Conversation history is available to the live agent.
-* The customer is informed before the transfer occurs.
-* No customer information needs to be entered again after escalation.
+- Escalation is triggered under the correct business conditions.
+- A support case is created successfully.
+- A unique case ID is generated.
+- Authentication status is preserved.
+- Customer, policy, claim, or update request information is transferred.
+- The complete conversation summary is shared with the live agent.
+- Customers are informed before the transfer begins.
+- Customers do not need to repeat previously collected information after the transfer.
 
 ---
 
 # 7. API Mapping
 
-| Function            | Purpose                                           |
-| ------------------- | ------------------------------------------------- |
-| `createCase()`      | Create a customer support ticket                  |
-| `escalateToAgent()` | Transfer the conversation to a live support agent |
+| API | Purpose |
+|-----|---------|
+| `createCase()` | Create a support case and generate a case ID |
+| `escalateToAgent()` | Transfer the conversation and context to a live support agent |
 
 ---
 
 # Expected Outcome
 
-Customers requiring human assistance are transferred smoothly to a live support agent with complete conversation context, reducing repeated questioning and improving the overall customer support experience.
+When automated resolution is no longer possible, the Insurance Conversational AI Voice Agent seamlessly transfers the customer to a live support representative by creating a support ticket, preserving the authenticated session, transferring all relevant conversation context, and ensuring the customer receives uninterrupted assistance without repeating previously provided information.
