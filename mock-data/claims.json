@@ -1,23 +1,52 @@
 [
   {
-    "claimId": "CLM12345",
-    "policyId": "P101",
+    "claimId": "CLM-2026-001",
+    "policyId": "POL-MOTOR-001",
+    "policyType": "Motor Insurance",
     "status": "In Progress",
     "amount": 25000,
+    "claimType": "Accident Damage",
+    "incidentDate": "2025-05-05",
     "lastUpdate": "2025-05-10"
   },
   {
-    "claimId": "CLM67890",
-    "policyId": "P102",
+    "claimId": "CLM-2026-002",
+    "policyId": "POL-HEALTH-001",
+    "policyType": "Health Insurance",
     "status": "Closed",
     "amount": 50000,
+    "claimType": "Hospitalization",
+    "incidentDate": "2025-03-28",
     "lastUpdate": "2025-04-01"
   },
   {
-    "claimId": "CLM24680",
-    "policyId": "P104",
+    "claimId": "CLM-2026-003",
+    "policyId": "POL-LIFE-001",
+    "policyType": "Life Insurance",
     "status": "Pending",
     "amount": 100000,
+    "claimType": "Life Cover",
+    "incidentDate": "2025-05-20",
     "lastUpdate": "2025-05-22"
+  },
+  {
+    "claimId": "CLM-2026-004",
+    "policyId": "POL-MOTOR-002",
+    "policyType": "Motor Insurance",
+    "status": "Approved",
+    "amount": 18000,
+    "claimType": "Windshield Damage",
+    "incidentDate": "2025-06-08",
+    "lastUpdate": "2025-06-12"
+  },
+  {
+    "claimId": "CLM-2026-005",
+    "policyId": "POL-HEALTH-002",
+    "policyType": "Health Insurance",
+    "status": "Rejected",
+    "amount": 0,
+    "claimType": "Outpatient Treatment",
+    "incidentDate": "2025-06-01",
+    "lastUpdate": "2025-06-05"
   }
 ]
