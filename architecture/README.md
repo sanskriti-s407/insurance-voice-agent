@@ -10,6 +10,7 @@
 
 
 -  intent_routing_diagram.png
-  <img width="1179" height="787" alt="Screenshot (18)" src="https://github.com/user-attachments/assets/9a81c284-e255-445e-a4e3-394c258bc75e" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/2ae4cada-b7b9-48bc-a2d8-be3a3fc19c6a" />
+
 
 
