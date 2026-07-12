@@ -5,7 +5,8 @@
 
 
 - authentication_workflow.png
-<img width="640" height="803" alt="image" src="https://github.com/user-attachments/assets/572b5d09-54b8-419b-b785-49510c441109" />
+<img width="1122" height="1402" alt="image" src="https://github.com/user-attachments/assets/2d62b26f-2054-4eac-8ab5-cae93b321adf" />
+
 
 
 -  intent_routing_diagram.png
