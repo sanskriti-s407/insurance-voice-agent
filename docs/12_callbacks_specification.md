@@ -89,7 +89,7 @@ Executes immediately after a backend API returns a response.
 
 ---
 
-## 3. Before Model Callback
+## 3. Before LLM Callback
 
 ### Purpose
 
@@ -113,7 +113,7 @@ Executes before the language model generates a response.
 
 ---
 
-## 4. After Model Callback
+## 4. After LLM Callback
 
 ### Purpose
 
@@ -143,8 +143,8 @@ Executes after the model generates a response and before it is delivered to the 
 |----------|-------|
 | Before Tool | Validates authentication, Policy ID, and API inputs before backend execution. |
 | After Tool | Stores API results, updates session parameters, and prepares data for the next step. |
-| Before Model | Applies prompt injection protection, masks sensitive information, and enforces guardrails. |
-| After Model | Validates responses, removes sensitive information, and logs conversation metrics. |
+| Before LLM | Applies prompt injection protection, masks sensitive information, and enforces guardrails. |
+| After LLM | Validates responses, removes sensitive information, and logs conversation metrics. |
 
 ---
 
