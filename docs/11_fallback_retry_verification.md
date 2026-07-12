@@ -108,7 +108,7 @@ The conversation is automatically transferred to a live support agent under the 
 Before transfer, the system:
 
 - Creates a support case.
-- Generates a Ticket ID.
+- Generates a case ID.
 - Transfers the complete conversation summary.
 - Preserves authentication and customer context for the live agent.
 
