@@ -144,7 +144,7 @@
 
 **Expected Result:**
 - Support case is created.
-- Ticket ID is generated.
+- Case ID is generated.
 - Conversation context is transferred.
 - Customer is connected to a live support agent.
 
