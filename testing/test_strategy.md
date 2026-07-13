@@ -45,15 +45,6 @@ The testing scope includes the following business capabilities:
 - Golden Evaluation Testing
 - Scenario Evaluation Testing
 
-## Test Environment
-
-- Google CX Agent Studio Simulator
-- Mock Backend APIs
-- Mock Customer Dataset
-- Mock Policy Dataset
-- Mock Claim Dataset
-- Mock Update Request Dataset
-
 ## Entry Criteria
 
 Testing begins only after:
