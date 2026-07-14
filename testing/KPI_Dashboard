@@ -1,0 +1,18 @@
+KPI Dashboard
+Overview
+
+The KPI Dashboard monitors the performance of the Happy Insurance Voice Agent. It helps evaluate customer experience, automation efficiency, authentication success, and backend API performance.
+
+Key Performance Indicators
+Total Conversations – Number of customer conversations handled by the AI.
+Authentication Success Rate – Percentage of users successfully authenticated.
+Automation Rate – Percentage of queries resolved without human intervention.
+Escalation Rate – Percentage of conversations transferred to a human agent.
+Average Handling Time (AHT) – Average time taken to resolve a customer request.
+API Success Rate – Percentage of successful backend API/tool calls.
+Dashboard Insights
+Most customer queries were resolved successfully by the AI.
+Authentication was completed successfully for the majority of users.
+Policy inquiries and claim status were the most frequently requested services.
+Low escalation rate indicates effective AI-assisted customer support.
+Backend APIs responded successfully with low latency, ensuring a smooth user experience.
