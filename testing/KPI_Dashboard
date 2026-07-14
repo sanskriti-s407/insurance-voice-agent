@@ -1,18 +1,57 @@
-KPI Dashboard
-Overview
+# KPI Dashboard
 
-The KPI Dashboard monitors the performance of the Happy Insurance Voice Agent. It helps evaluate customer experience, automation efficiency, authentication success, and backend API performance.
+## Overview
 
-Key Performance Indicators
-Total Conversations – Number of customer conversations handled by the AI.
-Authentication Success Rate – Percentage of users successfully authenticated.
-Automation Rate – Percentage of queries resolved without human intervention.
-Escalation Rate – Percentage of conversations transferred to a human agent.
-Average Handling Time (AHT) – Average time taken to resolve a customer request.
-API Success Rate – Percentage of successful backend API/tool calls.
-Dashboard Insights
-Most customer queries were resolved successfully by the AI.
-Authentication was completed successfully for the majority of users.
-Policy inquiries and claim status were the most frequently requested services.
-Low escalation rate indicates effective AI-assisted customer support.
-Backend APIs responded successfully with low latency, ensuring a smooth user experience.
+The KPI Dashboard provides real-time insights into the performance of the Happy Insurance Voice Agent. It helps monitor customer interactions, authentication outcomes, AI automation, human escalations, and backend API performance. These metrics enable continuous evaluation of the agent's efficiency, reliability, and overall customer experience.
+
+---
+
+## Key Performance Indicators (KPIs)
+
+### Total Conversations
+Tracks the total number of customer conversations handled by the voice agent. This metric provides an overview of agent usage and customer engagement.
+
+### Authentication Success Rate
+Measures the percentage of customers who successfully complete the authentication process. A high success rate indicates a smooth and reliable verification workflow.
+
+### Automation Rate
+Represents the percentage of customer requests that are fully resolved by the AI agent without requiring human assistance. This metric reflects the effectiveness of the conversational agent.
+
+### Escalation Rate
+Shows the percentage of conversations that are transferred to a human support agent. Monitoring this metric helps identify scenarios where additional AI improvements may be required.
+
+### Average Handling Time (AHT)
+Measures the average time taken by the AI agent to complete a customer interaction. Lower handling times indicate faster issue resolution and improved customer experience.
+
+### API Success Rate
+Tracks the percentage of successful backend API calls made by the agent. This metric helps ensure reliable communication between the AI agent and backend services.
+
+---
+
+## Dashboard Insights
+
+The KPI Dashboard provides actionable insights, including:
+
+- Overall conversation volume handled by the AI agent.
+- Authentication success and failure trends.
+- Percentage of requests resolved automatically versus escalated.
+- Most frequently used customer services, such as Policy Details, Claim Status, Benefits, and Policy Renewal.
+- Average response and handling time across conversations.
+- Backend API reliability, success rate, and response latency.
+
+These insights help evaluate system performance, identify improvement opportunities, and support data-driven decision-making for future enhancements.
+
+---
+
+## KPI Event Logging
+
+The backend records key events for every interaction in the `kpi_events` table, including:
+
+- **Operation** – The tool or API invoked.
+- **Stage** – Start or completion stage of the operation.
+- **Status** – Indicates whether the operation succeeded or failed.
+- **Latency** – Time taken to complete the operation.
+- **Timestamp** – Time at which the event occurred.
+- **Phone Identifier** – Only the last four digits of the customer's phone number are stored for privacy and tracking purposes.
+
+This event logging enables the generation of dashboards and performance reports while ensuring customer data remains protected.
