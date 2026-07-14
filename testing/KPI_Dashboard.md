@@ -35,3 +35,19 @@ The KPI Scorecard summarizes the overall performance of the Happy Insurance Voic
 | **Average Turns per Session** | Average number of conversational exchanges required to complete a customer request. | **6.98** |
 
 ----
+
+<img width="603" height="450" alt="image" src="https://github.com/user-attachments/assets/b8f3b06f-5e32-420d-8052-aabbc08ca4f3" />
+
+
+<img width="627" height="492" alt="Tool failure rate" src="https://github.com/user-attachments/assets/10c431fc-e547-4f08-a977-0452168da6af" />
+
+
+<img width="627" height="492" alt="Tool latency" src="https://github.com/user-attachments/assets/97e9d3ae-5701-433e-8b8f-7a006476522d" />
+
+
+<img width="603" height="450" alt="image" src="https://github.com/user-attachments/assets/fe09a21a-d456-4afa-99a7-cfbca4c8dd3b" />
+
+
+<img width="603" height="450" alt="image" src="https://github.com/user-attachments/assets/1b94045f-639d-4ade-97ce-d4b51caeb772" />
+
+
