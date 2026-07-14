@@ -6,52 +6,32 @@ The KPI Dashboard provides real-time insights into the performance of the Happy 
 
 ---
 
-## Key Performance Indicators (KPIs)
-
-### Total Conversations
-Tracks the total number of customer conversations handled by the voice agent. This metric provides an overview of agent usage and customer engagement.
-
-### Authentication Success Rate
-Measures the percentage of customers who successfully complete the authentication process. A high success rate indicates a smooth and reliable verification workflow.
-
-### Automation Rate
-Represents the percentage of customer requests that are fully resolved by the AI agent without requiring human assistance. This metric reflects the effectiveness of the conversational agent.
-
-### Escalation Rate
-Shows the percentage of conversations that are transferred to a human support agent. Monitoring this metric helps identify scenarios where additional AI improvements may be required.
-
-### Average Handling Time (AHT)
-Measures the average time taken by the AI agent to complete a customer interaction. Lower handling times indicate faster issue resolution and improved customer experience.
-
-### API Success Rate
-Tracks the percentage of successful backend API calls made by the agent. This metric helps ensure reliable communication between the AI agent and backend services.
-
----
-
 ## Dashboard Insights
 
-The KPI Dashboard provides actionable insights, including:
+The KPI Dashboard provides key insights into the overall performance of the Happy Insurance Voice Agent.
 
-- Overall conversation volume handled by the AI agent.
-- Authentication success and failure trends.
-- Percentage of requests resolved automatically versus escalated.
-- Most frequently used customer services, such as Policy Details, Claim Status, Benefits, and Policy Renewal.
-- Average response and handling time across conversations.
-- Backend API reliability, success rate, and response latency.
+- High intent accuracy ensures customer requests are correctly identified and routed to the appropriate service.
+- A 100% authentication success rate confirms secure and reliable customer verification.
+- A high automation rate indicates that most customer journeys are completed without human intervention.
+- Strong scenario pass rates demonstrate successful end-to-end workflow execution during testing.
+- A low escalation rate reflects the AI agent's ability to resolve the majority of customer queries independently.
+- Fewer conversation turns per session indicate faster and more efficient issue resolution.
 
-These insights help evaluate system performance, identify improvement opportunities, and support data-driven decision-making for future enhancements.
+These insights help measure the effectiveness, reliability, and overall performance of the AI agent while identifying opportunities for continuous improvement.
 
 ---
 
-## KPI Event Logging
+# KPI Scorecard
 
-The backend records key events for every interaction in the `kpi_events` table, including:
+The KPI Scorecard summarizes the overall performance of the Happy Insurance Voice Agent. It measures the effectiveness of intent recognition, authentication, automation, conversation quality, and backend operations.
 
-- **Operation** – The tool or API invoked.
-- **Stage** – Start or completion stage of the operation.
-- **Status** – Indicates whether the operation succeeded or failed.
-- **Latency** – Time taken to complete the operation.
-- **Timestamp** – Time at which the event occurred.
-- **Phone Identifier** – Only the last four digits of the customer's phone number are stored for privacy and tracking purposes.
+| KPI | Description | Result |
+|------|-------------|--------|
+| **Intent Accuracy** | Measures how accurately the AI identifies and routes customer intents to the correct workflow. | **98%** |
+| **Authentication Success** | Percentage of customers successfully authenticated before accessing policy services. | **100%** |
+| **Automation Rate** | Percentage of customer journeys completed entirely by the AI without human intervention. | **85%** |
+| **Scenario Pass Rate** | Percentage of end-to-end test scenarios successfully completed during evaluation. | **90.48%** |
+| **Escalation Rate** | Percentage of conversations transferred to a human support agent. | **15%** |
+| **Average Turns per Session** | Average number of conversational exchanges required to complete a customer request. | **6.98** |
 
-This event logging enables the generation of dashboards and performance reports while ensuring customer data remains protected.
+----
