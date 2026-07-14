@@ -34,7 +34,6 @@ The testing scope includes the following business capabilities:
 - Functional Testing
 - Conversation Flow Testing
 - Intent Recognition Testing
-- Entity Extraction Testing
 - Session Management Testing
 - Authentication Testing
 - API Integration Testing
