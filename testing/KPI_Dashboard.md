@@ -8,46 +8,80 @@ The KPI Dashboard provides real-time insights into the performance of the Happy 
 
 ## Dashboard Insights
 
-The KPI Dashboard provides key insights into the overall performance of the Happy Insurance Voice Agent.
+The KPI Dashboard highlights the overall effectiveness of the Happy Insurance Voice Agent by tracking key operational metrics.
 
-- High intent accuracy ensures customer requests are correctly identified and routed to the appropriate service.
-- A 100% authentication success rate confirms secure and reliable customer verification.
-- A high automation rate indicates that most customer journeys are completed without human intervention.
-- Strong scenario pass rates demonstrate successful end-to-end workflow execution during testing.
-- A low escalation rate reflects the AI agent's ability to resolve the majority of customer queries independently.
-- Fewer conversation turns per session indicate faster and more efficient issue resolution.
+- High intent accuracy ensures customer requests are correctly identified and routed.
+- Successful authentication enables secure access to policy services.
+- A high automation rate reduces the need for manual intervention.
+- Strong scenario pass rates demonstrate reliable end-to-end workflow execution.
+- A low escalation rate indicates that most customer requests are resolved by the AI.
+- Fewer conversation turns per session improve response efficiency and customer experience.
 
-These insights help measure the effectiveness, reliability, and overall performance of the AI agent while identifying opportunities for continuous improvement.
+These insights help monitor system performance, identify improvement opportunities, and support continuous optimization of the conversational AI solution.
 
 ---
 
 # KPI Scorecard
 
-The KPI Scorecard summarizes the overall performance of the Happy Insurance Voice Agent. It measures the effectiveness of intent recognition, authentication, automation, conversation quality, and backend operations.
+The KPI Scorecard summarizes the overall performance of the Happy Insurance Voice Agent.
 
 | KPI | Description | Result |
 |------|-------------|--------|
-| **Intent Accuracy** | Measures how accurately the AI identifies and routes customer intents to the correct workflow. | **98%** |
-| **Authentication Success** | Percentage of customers successfully authenticated before accessing policy services. | **100%** |
-| **Automation Rate** | Percentage of customer journeys completed entirely by the AI without human intervention. | **85%** |
-| **Scenario Pass Rate** | Percentage of end-to-end test scenarios successfully completed during evaluation. | **90.48%** |
-| **Escalation Rate** | Percentage of conversations transferred to a human support agent. | **15%** |
-| **Average Turns per Session** | Average number of conversational exchanges required to complete a customer request. | **6.98** |
+| **Intent Accuracy** | Measures how accurately the AI identifies and routes customer intents. | **98%** |
+| **Authentication Success** | Percentage of customers successfully authenticated. | **100%** |
+| **Automation Rate** | Customer journeys completed without human intervention. | **85%** |
+| **Scenario Pass Rate** | End-to-end evaluation scenarios passed successfully. | **90.48%** |
+| **Escalation Rate** | Conversations transferred to a human support agent. | **15%** |
+| **Average Turns per Session** | Average conversation exchanges required to resolve a request. | **6.98** |
 
-----
+---
 
-<img width="603" height="450" alt="image" src="https://github.com/user-attachments/assets/b8f3b06f-5e32-420d-8052-aabbc08ca4f3" />
+# Dashboard Visualizations
 
+The following dashboards provide a detailed view of the Happy Insurance Voice Agent's performance.
 
-<img width="627" height="492" alt="Tool failure rate" src="https://github.com/user-attachments/assets/10c431fc-e547-4f08-a977-0452168da6af" />
+---
 
+## 1. KPI Overview Dashboard
 
-<img width="627" height="492" alt="Tool latency" src="https://github.com/user-attachments/assets/97e9d3ae-5701-433e-8b8f-7a006476522d" />
+This dashboard presents the overall performance of the voice agent, including conversation metrics, authentication success, automation rate, escalation rate, and average handling time.
 
+<img width="603" height="450" alt="KPI Overview Dashboard" src="https://github.com/user-attachments/assets/b8f3b06f-5e32-420d-8052-aabbc08ca4f3" />
 
-<img width="603" height="450" alt="image" src="https://github.com/user-attachments/assets/fe09a21a-d456-4afa-99a7-cfbca4c8dd3b" />
+---
 
+## 2. Tool Failure Rate
 
-<img width="603" height="450" alt="image" src="https://github.com/user-attachments/assets/1b94045f-639d-4ade-97ce-d4b51caeb772" />
+This dashboard tracks backend tool failures and helps identify APIs or services that require attention to improve overall system reliability.
 
+<img width="627" height="492" alt="Tool Failure Rate Dashboard" src="https://github.com/user-attachments/assets/10c431fc-e547-4f08-a977-0452168da6af" />
 
+---
+
+## 3. Tool Latency
+
+This dashboard measures the response time of backend APIs and tools, helping evaluate system performance and identify latency bottlenecks.
+
+<img width="627" height="492" alt="Tool Latency Dashboard" src="https://github.com/user-attachments/assets/97e9d3ae-5701-433e-8b8f-7a006476522d" />
+
+---
+
+## 4. Authentication Performance
+
+This dashboard visualizes authentication outcomes, including successful verifications, failed attempts, and overall authentication efficiency.
+
+<img width="603" height="450" alt="Authentication Performance Dashboard" src="https://github.com/user-attachments/assets/fe09a21a-d456-4afa-99a7-cfbca4c8dd3b" />
+
+---
+
+## 5. Customer Journey Analytics
+
+This dashboard provides insights into customer journeys, including automated resolutions, human escalations, and conversation flow efficiency.
+
+<img width="603" height="450" alt="Customer Journey Analytics Dashboard" src="https://github.com/user-attachments/assets/1b94045f-639d-4ade-97ce-d4b51caeb772" />
+
+---
+
+# Conclusion
+
+The KPI Dashboard enables continuous monitoring of the Happy Insurance Voice Agent by measuring intent recognition, authentication success, automation, conversation efficiency, backend tool performance, and customer journey outcomes. These insights support data-driven improvements and ensure a secure, reliable, and efficient conversational AI experience.
