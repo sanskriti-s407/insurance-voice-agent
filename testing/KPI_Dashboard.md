@@ -1,4 +1,4 @@
-## KPI Dashboard
+# KPI Dashboard
 
 ## Overview
 
