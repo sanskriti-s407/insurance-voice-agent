@@ -25,7 +25,6 @@ The testing scope includes the following business capabilities:
   - Submit Update Request
   - Check Update Request Status
 - Human Escalation
-- Session Management
 - Multi-Policy Handling
 - Proactive Renewal Notifications
 
